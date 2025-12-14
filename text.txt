@@ -1,0 +1,12 @@
+@bushido2014 ➜ /workspaces/drtracker (master) $ they are enabled in your .ini files:
+    - /usr/local/etc/php/conf.d/docker-php-ext-opcache.ini
+    - /usr/local/etc/php/conf.d/docker-php-ext-sodium.ini
+    - /usr/local/etc/php/conf.d/xdebug.ini
+You can also run `php --ini` in a terminal to see which files are used by PHP in CLI mode.
+Alternatively, you can run Composer with `--ignore-platform-req=ext-gd` to temporarily ignore these required extensions.
+
+Installation failed, reverting ./composer.json and ./composer.lock to their original content.
+@bushido2014 ➜ /workspaces/drtracker (master) $ they are enabled in your .ini files:
+    - /usr/local/etc/php/conf.d/docker-php-ext-opcache.ini
+    - /usr/local/etc/php/conf.d/docker-php-ext-sodium.ini
+@bushido2014 ➜ /workspaces/drtracker (master) $ nd ./composer.lock to their original content. these required extensions.

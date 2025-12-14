@@ -25,5 +25,4 @@ sudo chmod +x /usr/local/bin/composer
 
 # Instalează dependențele Drupal
 composer install
-
 echo "✅ Setup complete!"
