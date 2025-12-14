@@ -1,29 +1,21 @@
 {
   "name": "Drupal 11 Development",
-  "image": "mcr.microsoft.com/devcontainers/php:1-8.4-bullseye",
+  "image": "mcr.microsoft.com/devcontainers/php:8.3-bullseye",
   
   "features": {
     "ghcr.io/devcontainers/features/git:1": {},
-    "ghcr.io/devcontainers/features/github-cli:1": {},
-    "ghcr.io/devcontainers-contrib/features/composer:2": {}
+    "ghcr.io/devcontainers/features/github-cli:1": {}
   },
   
-  "postCreateCommand": "composer install",
+  "postCreateCommand": "curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer && composer install",
   
   "customizations": {
     "vscode": {
       "extensions": [
-        "bmewburn.vscode-intelephense-client",
-        "xdebug.php-debug",
-        "drupal.vscode-plugin"
-      ],
-      "settings": {
-        "php.validate.executablePath": "/usr/local/bin/php"
-      }
+        "xdebug.php-debug"
+      ]
     }
   },
-  
-  "forwardPorts": [8080],
   
   "remoteUser": "vscode"
 }
