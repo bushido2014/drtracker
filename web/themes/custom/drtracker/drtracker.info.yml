@@ -1,0 +1,11 @@
+name: Drtracker
+type: theme
+description: 'Custom theme for Drtracker'
+core_version_requirement: ^11
+base theme: false
+regions:
+  header: Header
+  content: Content
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  footer: Footer

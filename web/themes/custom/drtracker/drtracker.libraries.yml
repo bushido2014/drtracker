@@ -1,0 +1,9 @@
+global:
+  css:
+    base:
+      css/main.css: {}
+      css/components/button.css: {}
+      css/components/header.css: {}
+      css/components/footer.css: {}
+  js:
+    js/main.js: {}

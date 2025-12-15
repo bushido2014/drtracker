@@ -1,0 +1,19 @@
+/* Main stylesheet for Drtracker theme */
+
+:root {
+  --primary-color: #333;
+  --secondary-color: #666;
+  --accent-color: #0066cc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: var(--primary-color);
+  line-height: 1.6;
+}
