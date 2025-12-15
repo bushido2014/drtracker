@@ -3,6 +3,8 @@ type: theme
 description: 'Custom theme for Drtracker'
 core_version_requirement: ^11
 base theme: false
+
+# Regions
 regions:
   header: "Header"
   content_top: "Content Top"
@@ -10,5 +12,10 @@ regions:
   content_bottom: "Content Bottom"
   footer: "Footer"
 
+# Hidden regions
+regions_hidden:
+  - content
+
+# Libraries
 libraries:
-  - drtracker/global-styling
+  - drtracker/global
