@@ -1,0 +1,32 @@
+{#
+/**
+ * @file
+ * Theme override for the "Site branding" block.
+ *
+ * Available variables:
+ * - site_logo: Logo image.
+ * - site_name: Site name.
+ * - site_slogan: Site slogan.
+ */
+#}
+<div class="drtracker-site-branding">
+  {% if site_logo %}
+    <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home" class="site-branding__logo">
+      <img src="{{ site_logo }}" alt="{{ title }}" />
+    </a>
+  {% endif %}
+
+ 
+  
+  {% if site_name %}
+    <a href="{{ path('<front>') }}" title="{{ title }}" rel="home" class="site-branding__name">{{ site_name }}</a>
+  {% endif %}
+  
+
+  
+  
+  {% if site_slogan %}
+    <div class="site-branding__slogan">{{ site_slogan }}</div>
+  {% endif %}
+  
+</div>

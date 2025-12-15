@@ -14,13 +14,11 @@
  *   - slogan: The slogan of the site.
  * - page_top: Initial rendered markup. This should be printed before 'page'.
  * - page: The rendered page markup.
- * - page_bottom: Closing rendered markup. This variable should be printed after
- *   'page'.
+ * - page_bottom: Closing rendered markup. This variable should be printed after 'page'.
  * - db_offline: A flag indicating if the database is offline.
- * - placeholder_token: The token for generating head, css, js and js-bottom
- *   placeholders.
+ * - placeholder_token: The token for generating head, css, js and js-bottom placeholders.
  *
- * @see \Drupal\Core\Theme\ThemePreprocess::preprocessHtml()
+ * @see template_preprocess_html()
  *
  * @ingroup themeable
  */
@@ -30,10 +28,6 @@
   <head>
     <head-placeholder token="{{ placeholder_token }}">
     <title>{{ head_title|safe_join(' | ') }}</title>
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
-/>
     <css-placeholder token="{{ placeholder_token }}">
     <js-placeholder token="{{ placeholder_token }}">
   </head>
@@ -42,17 +36,20 @@
       Keyboard navigation/accessibility link to main content section in
       page.html.twig.
     #}
-    <a href="#main-content" class="visually-hidden focusable">
+    <a href="#main-content" class="visually-hidden focusable skip-link">
       {{ 'Skip to main content'|t }}
     </a>
+    
     {{ page_top }}
     {{ page }}
     {{ page_bottom }}
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    {% if logged_in %}
-  
-{% endif %}
+    
     <js-bottom-placeholder token="{{ placeholder_token }}">
-      <a href="#" id="scroll-top" class="scroll-top d-flex"><i class="fa-solid fa-circle-arrow-up"></i></a>
+    
+    {# Scroll to top button #}
+    <a href="#top" id="scroll-top" class="scroll-top" aria-label="{{ 'Scroll to top'|t }}">
+      <span class="scroll-top__icon" aria-hidden="true">↑</span>
+      <span class="visually-hidden">{{ 'Back to top'|t }}</span>
+    </a>
   </body>
 </html>

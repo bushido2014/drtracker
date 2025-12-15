@@ -1,0 +1,61 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a single page.
+ *
+ * Available variables:
+ * - is_front: A flag indicating if the current page is the front page.
+ * - logged_in: A flag indicating if the user is registered and signed in.
+ * - front_page: The URL of the front page.
+ * - logo: The url of the logo image, as defined in theme settings.
+ * - site_name: The name of the site.
+ * - site_slogan: The slogan of the site.
+ *
+ * Regions:
+ * - page.header: Items for the header region.
+ * - page.content_top: Items for the content top region.
+ * - page.content: The main content of the current page.
+ * - page.content_bottom: Items for the content bottom region.
+ * - page.footer: Items for the footer region.
+ *
+ * @see template_preprocess_page()
+ * @see html.html.twig
+ */
+#}
+
+
+  {# Header #}
+  {% if page.header %}
+    <header role="banner" class="site-header">
+      {{ page.header }}
+    </header>
+  {% endif %}
+
+  {# Content Top #}
+  {% if page.content_top %}
+    <div class="content-top">
+      {{ page.content_top }}
+    </div>
+  {% endif %}
+
+  {# Main Content #}
+  <main role="main" class="main-content">
+    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+    
+    {{ page.content }}
+  </main>
+
+  {# Content Bottom #}
+  {% if page.content_bottom %}
+    <div class="content-bottom">
+      {{ page.content_bottom }}
+    </div>
+  {% endif %}
+
+  {# Footer #}
+  {% if page.footer %}
+    <footer role="contentinfo" class="site-footer">
+      {{ page.footer }}
+    </footer>
+  {% endif %}
+
