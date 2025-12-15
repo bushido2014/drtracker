@@ -1,9 +1,11 @@
 /* Main stylesheet for Drtracker theme */
 
 :root {
-  --primary-color: #333;
-  --secondary-color: #666;
+  --primary-color: #5B44BF;
+  --secondary-color: #F5F7F9;
   --accent-color: #0066cc;
+  --dark-color: #1C222B;
+  --green-w-color: #C9FF85;
 }
 
 * {
