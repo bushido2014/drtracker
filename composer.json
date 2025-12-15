@@ -23,7 +23,8 @@
         "drush/drush": "^13",
         "drupal/admin_toolbar": "^3.6",
         "drupal/pathauto": "^1.14",
-        "drupal/paragraphs": "^1.19"
+        "drupal/paragraphs": "^1.19",
+        "drupal/entity_usage": "^2.0@beta"
     },
     "require-dev": {
         "drupal/core-dev": "^11"
