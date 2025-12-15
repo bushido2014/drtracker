@@ -2,8 +2,9 @@
 
 :root {
   --primary-color: #5B44BF;
-  --secondary-color: #F5F7F9;
+  --gray-color: #F5F7F9;
   --accent-color: #0066cc;
+  --base-dark-color:#000;
   --dark-color: #1C222B;
   --green-w-color: #C9FF85;
 }
