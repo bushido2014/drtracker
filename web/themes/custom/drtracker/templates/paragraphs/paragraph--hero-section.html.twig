@@ -1,0 +1,25 @@
+<section class="hero">
+  <div class="container">
+    <h1>{{paragraph.field_title.value}}</h1>
+    <div class="description">
+      {{paragraph.field_description.value| raw}}
+    </div>
+        {% if paragraph.field_image.entity %} {% set media =
+                paragraph.field_image.entity %} {% if
+                media.field_media_image.entity %}
+            <div class="hero-img">
+
+                <img
+                src="{{ file_url(media.field_media_image.entity.uri.value) }}"
+                alt="{{ media.field_media_image.alt }}"
+              />
+
+            </div>
+            {% endif %} {% endif %}
+
+            <div class="hero-btns-wrapp">
+              {{content.field_link}}
+              {{content.field_link_secondary}}
+            </div>
+  </div>
+</section>
