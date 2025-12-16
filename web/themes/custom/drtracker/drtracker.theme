@@ -42,3 +42,10 @@ function drtracker_preprocess_node(array &$variables): void {
     $variables['#attached']['library'][] = 'drtracker/swiper';
   }
 }
+
+/**
+ * Implements hook_preprocess_HOOK() for menu.
+ */
+function drtracker_preprocess_menu__main(array &$variables): void {
+   $variables['attributes']['class'][] = 'main-menu';
+}
