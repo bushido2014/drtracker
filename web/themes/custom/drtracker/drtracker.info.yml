@@ -6,7 +6,8 @@ base theme: false
 
 # Regions
 regions:
-  header: "Header"
+  header_left: "Header Left"
+  header: "Header Center"
   header_right: "Header Right"
   content_top: "Content Top"
   content: "Content"
