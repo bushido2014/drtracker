@@ -27,8 +27,17 @@
   {# Header #}
   {% if page.header %}
     <header role="banner" class="site-header">
-      {{ page.header }}
+      <div class="header-left">
+      {{ page.header_left }}
+    </div>
+
+    <div class="header-center">
+      {{ page.header_center }}
+    </div>
+
+    <div class="header-right">
       {{ page.header_right }}
+    </div>
     </header>
   {% endif %}
 
