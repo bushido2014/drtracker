@@ -1,28 +1,9 @@
 /* Header component styles */
 
-header {
-  background-color: var(--primary-color);
-  color: white;
+.site-header {
   padding: 20px 0;
 }
-
-header nav {
-  max-width: 1200px;
-  margin: 0 auto;
+.site-header .d-flex {
+  justify-content: space-evenly;
 }
 
-header nav ul {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-}
-
-header nav a {
-  color: white;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-header nav a:hover {
-  color: var(--accent-color);
-}
