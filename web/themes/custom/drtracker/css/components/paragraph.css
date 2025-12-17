@@ -46,5 +46,5 @@
     height: 20px; 
     background-color: var(--green-w-color); 
     width: 220px;
-    z-index:1;
+    z-index:-1;
 }
