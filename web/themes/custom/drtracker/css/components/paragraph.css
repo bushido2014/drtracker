@@ -1,0 +1,8 @@
+.section-desc {
+  padding: 20px;
+  text-align: center;
+}
+
+.partners-logos {
+  grid-template-columns: repeat(6, 1fr);
+}
