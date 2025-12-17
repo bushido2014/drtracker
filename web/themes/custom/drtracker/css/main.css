@@ -1,7 +1,8 @@
 /* Main stylesheet for Drtracker theme */
 
 :root {
-  --primary-color: #5B44BF;
+  --primary-color:#7C5DFF;
+  --primary-hover-color: #5B44BF;
   --gray-color: #F5F7F9;
   --accent-color: #0066cc;
   --base-dark-color:#000;
