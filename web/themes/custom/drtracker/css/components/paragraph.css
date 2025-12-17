@@ -29,15 +29,20 @@
 .section-title {
   padding: 10px;
   position:relative;
-  max-width: 900px;
+  max-width: 860px;
   margin: 10px auto;
+  text-align:center;
 }
-.section-title::after {
+.heading-title {
+  position:relative;
+}
+.heading-title::after {
     content: ''; /* Required for pseudo-elements */
     position: absolute; /* Position the line relative to the container */
-    bottom: 0; /* Place it at the very bottom */
+    bottom: 3px; /* Place it at the very bottom */
     left: 0;
-    right: 0; /* Ensures the line spans the full width */
-    height: 3px; /* The thickness of the line */
-    background-color: var(--green-w-color) /* The color of the line */
+    right: 2px; /* Ensures the line spans the full width */
+    height: 18px; /* The thickness of the line */
+    background-color: var(--green-w-color); /* The color of the line */
+    width: 190px;
 }
