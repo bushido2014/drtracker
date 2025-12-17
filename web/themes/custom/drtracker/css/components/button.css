@@ -48,11 +48,11 @@ input[type="submit"]:hover {
 
 .btn-secondary {
   background-color: var(--base-dark-color);
-  color: var(--color-white);
+  color: var(--white-color);
 }
 .btn-secondary:hover,
 .btn-secondary:focus {
-  background-color: var(--color-white);
+  background-color: var(--white-color);
   color: var(--color-dark-gray);
   border-color: var(--primary-hover-color);
 }
