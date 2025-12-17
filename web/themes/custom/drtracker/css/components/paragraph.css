@@ -35,14 +35,16 @@
 }
 .heading-title {
   position:relative;
+  z-index:1;
 }
 .heading-title::after {
-    content: ''; /* Required for pseudo-elements */
-    position: absolute; /* Position the line relative to the container */
-    bottom: 3px; /* Place it at the very bottom */
-    left: 0;
-    right: 2px; /* Ensures the line spans the full width */
-    height: 18px; /* The thickness of the line */
-    background-color: var(--green-w-color); /* The color of the line */
-    width: 190px;
+    content: ''; 
+    position: absolute; 
+    bottom: 3px; 
+    left: auto;
+    right: 22px; 
+    height: 20px; 
+    background-color: var(--green-w-color); 
+    width: 220px;
+    z-index:1;
 }
