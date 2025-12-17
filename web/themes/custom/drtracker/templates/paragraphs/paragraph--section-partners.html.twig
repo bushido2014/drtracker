@@ -1,0 +1,17 @@
+<section class="partnership">
+<div class="container">
+<div class="section-desc">{{paragraph.field_description.value|raw}}</div>
+<div class="partners-logos d-grid">
+  {% for media in paragraph.field_images %} {% set file =
+        media.entity.field_media_image.entity %}
+        <figure class="logo-partner">
+          <img
+            src="{{ file_url(file.uri.value) }}"
+            alt="{{ file.field_media_image.alt|default('Partner logo') }}"
+            loading="lazy"
+          />
+        </figure>
+        {% endfor %}
+</div>
+</div>
+</section>
