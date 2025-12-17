@@ -48,3 +48,9 @@
     width: 220px;
     z-index:-1;
 }
+.hero-btns-wrapp {
+  grid-column-gap:20px;
+  grid-row-gap:20px;
+  justify-content: center;
+  flex-dirextion: row;
+}
