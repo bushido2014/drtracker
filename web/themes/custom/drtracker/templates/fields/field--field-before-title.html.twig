@@ -1,5 +1,5 @@
-<div{{ attributes.addClass('before-title', 'd-flex') }}>
-
+<div{{ attributes.addClass('before-title') }}>
+<div class="d-flex">
   {% if not label_hidden %}
     <h3{{ title_attributes }}>{{ label }}</h3>
   {% endif %}
@@ -13,5 +13,5 @@
       {{ item.content }}
     </span>
   {% endfor %}
-
+  </div>
 </div>
