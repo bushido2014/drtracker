@@ -56,3 +56,13 @@ input[type="submit"]:hover {
   color: var(--white-color);
   border-color: var(--base-dark-color);
 }
+.btn-outline {
+  border-color: var(--primary-color);
+  background-color: var(--white-color);
+}
+
+.btn-outline:hover,
+.btn-outline:focus {
+  border-color: var(--primary-hover-color);
+  background-color: var(--gray-color-25);
+}
