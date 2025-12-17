@@ -52,7 +52,7 @@ input[type="submit"]:hover {
 }
 .btn-secondary:hover,
 .btn-secondary:focus {
-  background-color: var(--dark-color);
+  background-color: var(--dark-slate-color);
   color: var(--white-color);
   border-color: var(--base-dark-color);
 }
