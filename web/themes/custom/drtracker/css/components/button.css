@@ -41,7 +41,7 @@ input[type="submit"]:hover {
 .btn-primary:hover,
 .btn-primary:focus
  {
-  background-color: var(--color-white);
+  background-color: var(--white-color);
   color: var(--color-black) !important;
   border-color: var(--color-dark-gray);
 }
