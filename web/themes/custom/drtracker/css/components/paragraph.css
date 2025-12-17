@@ -29,6 +29,8 @@
 .section-title {
   padding: 10px;
   position:relative;
+  max-width: 900px;
+  margin: 10px auto;
 }
 .section-title::after {
     content: ''; /* Required for pseudo-elements */
