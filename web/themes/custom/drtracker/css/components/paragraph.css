@@ -10,3 +10,13 @@
 .partners-logos {
   grid-template-columns: repeat(6, 1fr);
 }
+
+.before-title {
+  max-width:90px;
+  padding: 5px 8px;
+  background-color: var(--bgtag-color);
+  color: var(--primary-color);
+  display:block;
+  margin: 10px auto;
+  border-radius: 0.375rem;
+}
