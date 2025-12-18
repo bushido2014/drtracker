@@ -83,3 +83,6 @@
 .features-wrapp-top, .features-wrapp-bottom {
   padding: 20px 0;
 }
+.feature-image__right {
+  margin-bottom: -15px;
+}
