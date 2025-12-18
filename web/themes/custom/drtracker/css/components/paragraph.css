@@ -63,8 +63,7 @@ h2.heading-title::after {
 }
 .features-wrapp-top {
   grid-template-columns: 3fr 2fr;     
-  gap: 40px;                         
-  align-items: start;               
+  gap: 40px;                                      
 }
 
 .features-wrapp-top .features-item:nth-child(1) {
