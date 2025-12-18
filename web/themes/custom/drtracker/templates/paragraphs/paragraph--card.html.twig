@@ -11,18 +11,31 @@
 
 <div{{ attributes.addClass(classes) }}>
   
-  {# Image #}
+  {# Image 
   {% if content.field_image|render %}
     <div class="card__image">
       {{ content.field_image }}
     </div>
   {% endif %}
-  
+  #}
+ {% if paragraph.field_image.entity %} {% set media =
+                paragraph.field_image.entity %} {% if
+                media.field_media_image.entity %}
+            <div class="card__image">
+
+                <img
+                src="{{ file_url(media.field_media_image.entity.uri.value) }}"
+                alt="{{ media.field_media_image.alt }}"
+              />
+
+            </div>
+            {% endif %} {% endif %}
+
   {# Title #}
   {% if paragraph.field_title.value %}
-    <h4 class="card__title">
+    <h5 class="card__title">
       {{ paragraph.field_title.value }}
-    </h4>
+    </h5>
   {% endif %}
   
   {# Description #}
