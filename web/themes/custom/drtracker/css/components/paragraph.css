@@ -49,6 +49,7 @@
     z-index:-1;
 }
 .hero-btns-wrapp {
+  padding:25px 0;
   grid-column-gap:20px;
   grid-row-gap:20px;
   justify-content: center;
