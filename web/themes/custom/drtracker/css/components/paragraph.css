@@ -72,6 +72,11 @@ h2.heading-title::after {
 .features-wrapp-top .features-item:nth-child(1) .features-content__text {
   padding-block-end: 40px;
 }
+.features-wrapp-top .features-item:nth-child(2) .features-content__text,
+.features-wrapp-top .features-item:nth-child(2) .features-content__title {
+    padding-inline: 20px;
+}
+
 .features-item {
   background-color: var(--gray-color);
   padding: 10px;
