@@ -41,8 +41,10 @@
      </div>
     </div>
 
-   <div class="features-wrapp-bottom d-flex">
-      {{ content.field_cards_features}}
-   </div>
+   {% if content.field_cards_features|render %}
+      <div class="features-wrapp-bottom d-flex">
+        {{ content.field_cards_features }}
+      </div>
+    {% endif %}
 </div>
 </section>
