@@ -104,3 +104,6 @@ h2.heading-title::after {
 .feature-image__right {
   margin-bottom: -15px;
 }
+.solution-wrapp {
+  grid-template-columns: repeat(2, 1fr);
+}
