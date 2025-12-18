@@ -70,6 +70,9 @@ h2.heading-title::after {
 .features-wrapp-top .features-item:nth-child(1) {
   grid-template-columns: 1fr 1fr;
 }
+.features-wrapp-top .features-item:nth-child(1) .features-content__text {
+  margin-bottom:35px;
+}
 .features-item {
   background-color: var(--gray-color);
   padding: 10px;
