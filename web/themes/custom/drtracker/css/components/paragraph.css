@@ -71,7 +71,7 @@ h2.heading-title::after {
   grid-template-columns: 1fr 1fr;
 }
 .features-wrapp-top .features-item:nth-child(1) .features-content__text {
-  margin-bottom:35px;
+  padding-block-end: 40px;
 }
 .features-item {
   background-color: var(--gray-color);
