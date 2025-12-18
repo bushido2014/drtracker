@@ -39,7 +39,11 @@
 }
 h1.heading-title::after {
   right: 60px;
-  width: 220px;
+  width: 455px;
+}
+h2.heading-title::after {
+      right: 120px;
+       width: 298px;
 }
 .heading-title::after {
     content: ''; 
