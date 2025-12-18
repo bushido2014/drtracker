@@ -5,22 +5,31 @@
  */
 #}
 {% set classes = [
-  'list-card',
+  'list-card d-flex',
 ] %}
 
 <div{{ attributes.addClass(classes) }}>
-  {# Title #}
-  {% if paragraph.field_title.value %}
+<div class="list-item-value">
+  <div class="list-card__number">
+   {{ paragraph.field_label_value.value }}
+  </div>
+</div>
+<div class="list-item-desc">
+ {% if paragraph.field_title.value %}
     <h6 class="list-card__title">
       {{ paragraph.field_title.value }}
     </h6>
   {% endif %}
-  
-  {# Description #}
-  {% if paragraph.field_description.value %}
+ {% if paragraph.field_description.value %}
     <div class="list-card__description">
       {{ paragraph.field_description.value|raw }}
     </div>
   {% endif %}
+</div>
+ 
+ 
+  
+
+ 
   
 </div>
