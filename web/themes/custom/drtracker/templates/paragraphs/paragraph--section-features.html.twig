@@ -43,7 +43,8 @@
 
    {% if content.field_cards_features|render %}
       <div class="features-wrapp-bottom d-flex">
-        {{ content.field_cards_features }}
+        {#{{ content.field_cards_features }}#}
+          {{ content.field_cards_features|without('wrapper') }}
       </div>
     {% endif %}
 </div>
