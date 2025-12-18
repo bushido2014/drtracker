@@ -107,3 +107,7 @@ h2.heading-title::after {
 .solution-wrapp {
   grid-template-columns: repeat(2, 1fr);
 }
+.wrapp-title {
+  position:relative;
+  padding-block: 20px;
+}
