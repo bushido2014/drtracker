@@ -54,3 +54,7 @@
   justify-content: center;
   flex-direction: row;
 }
+
+.features-wrapp-top {
+  align-items: initial;
+}
