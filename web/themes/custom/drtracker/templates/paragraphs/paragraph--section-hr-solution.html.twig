@@ -8,10 +8,13 @@
 <div class="wrapp-title"><h2 class="heading-title">{{paragraph.field_title.value}}</h2></div>
  
 <div class="list-wrapp">
-{{content.field_lists}}
+{% if content.field_lists|render %}
+    {{ content.field_lists|without('wrapper') }}
+ {% endif %}
 </div>
 </div>
 <div class="solution-item__img">
+
   {% if paragraph.field_image.entity %}
             {% set media = paragraph.field_image.entity %}
             {% if media.field_media_image.entity %}
