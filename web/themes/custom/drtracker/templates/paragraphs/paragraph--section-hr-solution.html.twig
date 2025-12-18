@@ -1,0 +1,26 @@
+<section class="solution">
+  <div class="container">
+
+<div class="solution-wrapp d-grid">
+
+<div class="solution-item__content">
+   <div class="section-title">
+      <div class="feature-section-title"><h2 class="heading-title">{{paragraph.field_title.value}}</h2></div>
+   </div>
+<div class="list-wrapp">
+{{content.field_lists}}
+</div>
+</div>
+<div class="solution-item__img">
+  {% if paragraph.field_image.entity %}
+            {% set media = paragraph.field_image.entity %}
+            {% if media.field_media_image.entity %}
+           <img src="{{ file_url(media.field_media_image.entity.uri.value) }}" alt="{{ media.field_media_image.alt }}" />
+          {% endif %}
+          {% endif %} 
+</div>
+</div>
+
+
+ </div>
+</section>
