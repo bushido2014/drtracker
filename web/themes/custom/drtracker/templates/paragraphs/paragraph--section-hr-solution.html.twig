@@ -7,11 +7,11 @@
  
 <div class="wrapp-title"><h2 class="heading-title">{{paragraph.field_title.value}}</h2></div>
  
-<div class="list-wrapp">
+
 {% if content.field_lists|render %}
     {{ content.field_lists|without('wrapper') }}
  {% endif %}
-</div>
+
 </div>
 <div class="solution-item__img">
 
