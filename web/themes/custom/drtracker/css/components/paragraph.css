@@ -60,7 +60,7 @@
   align-items: start;               
 }
 
-.features-wrapp-top .features-item:nth-child(1)(1) {
+.features-wrapp-top .features-item:nth-child(1) {
   align-items: initial;
   gap: 20px;
 }
