@@ -81,6 +81,10 @@ h2.heading-title::after {
 .features-wrapp-bottom {
   grid-template-columns: repeat(3, 1fr);
 }
+.features-content__title {
+  padding-block: 20px;
+}
+
 .card {
   background-color: var(--gray-color);
   padding: 15px;
