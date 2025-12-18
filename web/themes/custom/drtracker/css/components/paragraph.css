@@ -54,7 +54,12 @@
   justify-content: center;
   flex-direction: row;
 }
-
 .features-wrapp-top {
+  grid-template-columns: 3fr 2fr;     
+  gap: 40px;                         
+  align-items: start;               
+}
+.features-wrapp-top  .features-item:nth-child(1)(1) {
   align-items: initial;
 }
+
