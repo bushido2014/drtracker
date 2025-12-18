@@ -72,3 +72,9 @@
 .features-wrapp-bottom {
   grid-template-columns: repeat(3, 1fr)
 }
+.card {
+  background-color: var(--gray-color);
+  padding: 10px;
+  border-radius: 0.375rem;
+}
+  
