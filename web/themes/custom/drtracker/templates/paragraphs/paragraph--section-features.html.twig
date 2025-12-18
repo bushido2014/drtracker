@@ -41,7 +41,13 @@
               {{paragraph.field_feature_description_right.value}}
             </div>
         <div class="feature-image__right">
-           {{ content.field_image_top_feature_right }}
+           {#{{ content.field_image_top_feature_right }}#}
+            {% if paragraph.field_image_top_feature_right.entity %}
+            {% set media = paragraph.field_image_top_feature_right.entity %}
+            {% if media.field_media_image.entity %}
+           <img src="{{ file_url(media.field_media_image.entity.uri.value) }}" alt="{{ media.field_media_image.alt }}" />
+          {% endif %}
+          {% endif %} 
        </div>
       </div>
 
