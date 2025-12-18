@@ -59,8 +59,14 @@
   gap: 40px;                         
   align-items: start;               
 }
+
 .features-wrapp-top .features-item:nth-child(1)(1) {
   align-items: initial;
   gap: 20px;
+}
+.features-item {
+  background-color: var(--gray-color);
+  padding: 10px;
+  border-radius: 0.375rem;
 }
 
