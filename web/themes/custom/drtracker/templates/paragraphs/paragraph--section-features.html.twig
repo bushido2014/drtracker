@@ -9,16 +9,7 @@
     <div class="features-wrapp-top d-flex">
      <div class="features-item">
       <div class="features-img">
-
-        {% if paragraph.field_image_top_feature_left %} {% set media =
-                paragraph.field_image_top_feature_left %} {% if
-                media.field_media_image.entity.entity %}
-                <img
-                src="{{ file_url(media.field_media_image.entity.uri.value) }}"
-                alt="{{ media.field_media_image.alt }}"
-              />
-            {% endif %} {% endif %}
-
+           {{ content.field_image_top_feature_left }}
       </div>
       <div class="features-content">
          <div class="features-content__title">
@@ -39,14 +30,7 @@
           {{paragraph.field_feature_description_right.value}}
         </div>
         <div class="feature-image__right">
-         {% if paragraph.field_image_top_feature_right %} {% set media =
-                paragraph.field_image_top_feature_right %} {% if
-                media.field_media_image.entity.entity %}
-                <img
-                src="{{ file_url(media.field_media_image.entity.uri.value) }}"
-                alt="{{ media.field_media_image.alt }}"
-              />
-            {% endif %} {% endif %}
+           {{ content.field_image_top_feature_right }}
        </div>
       </div>
      </div>
