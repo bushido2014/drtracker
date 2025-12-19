@@ -111,3 +111,7 @@ h2.heading-title::after {
   position:relative;
   padding-block: 20px;
 }
+
+.solution-item__content .wrapp-title {
+    width: 430px;
+}
