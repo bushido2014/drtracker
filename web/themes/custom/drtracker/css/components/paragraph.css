@@ -115,3 +115,8 @@ h2.heading-title::after {
 .solution-item__content .wrapp-title {
     width: 430px;
 }
+.solution-wrapp {
+  background-color: var(--gray-color);
+  border-radius: 0.375rem;
+  padding-block: 20px;
+}
