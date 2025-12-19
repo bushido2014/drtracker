@@ -126,7 +126,7 @@ h2.heading-title::after {
   overflow: hidden;
     position: relative;
 }
-.solution-item__img {
+.solution-item__img img {
   width: 100%;
     height: 100%;
     object-fit: cover;
