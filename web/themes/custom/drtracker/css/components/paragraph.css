@@ -138,34 +138,34 @@ h2.heading-title::after {
 
 /* Card List – Superior Candidate Experience Style */
 .list-card {
-  background: #F5F7FA;           /* fundal gri foarte deschis */
-  border-radius: 24px;           /* colțuri rotunjite mari */
-  padding: 24px 32px;            /* spațiu interior generos */
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);   /* umbră subtilă și modernă */
+  background: #F5F7FA;           
+  border-radius: 24px;           
+  padding: 24px 32px;            
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);   
   border: 1px solid rgba(0, 0, 0, 0.04);
-  max-width: 480px;
-  margin: 16px auto;             /* centrat dacă vrei */
+  max-width: max-content;
+  margin: 16px auto;             
   transition: all 0.3s ease;
 }
 
 .list-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+  background-color: var(--primary-color);
 }
 
-/* Flex pentru aliniere perfectă număr + conținut */
+
 .list-card.d-flex {
   align-items: center;
   gap: 24px;
 }
 
-/* Cerculețul cu numărul */
+
 .list-card__number {
   flex-shrink: 0;
   width: 56px;
   height: 56px;
-  background: #FFFFFF;
-  border: 3px solid #000000;       /* contur negru gros */
+  border: 2px solid #000000;       
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -180,7 +180,7 @@ h2.heading-title::after {
   line-height: 1;
 }
 
-/* Titlul și descrierea */
+
 .list-card__title {
   font-size: 20px;
   font-weight: 700;
