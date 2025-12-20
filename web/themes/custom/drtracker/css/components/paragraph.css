@@ -124,7 +124,7 @@ h2.heading-title::after {
 
 .solution-item__img {
   overflow: hidden;
-    position: relative;
+  position: relative;
 }
 .solution-item__img img {
   width: 100%;
@@ -156,6 +156,9 @@ h2.heading-title::after {
   color: var(--white-color);
 }
 
+.list-card:hover .list-card__number {
+  border: 2px solid var(--white-color); 
+}
 
 .list-card.d-flex {
   align-items: center;
@@ -167,7 +170,7 @@ h2.heading-title::after {
   flex-shrink: 0;
   width: 56px;
   height: 56px;
-  border: 2px solid #000000;       
+  border: 2px solid var(--base-dark-color);       
   border-radius: 50%;
   display: flex;
   align-items: center;
