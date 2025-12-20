@@ -135,3 +135,76 @@ h2.heading-title::after {
     right:-15px;
     bottom: -15px;
 }
+
+/* Card List – Superior Candidate Experience Style */
+.list-card {
+  background: #F5F7FA;           /* fundal gri foarte deschis */
+  border-radius: 24px;           /* colțuri rotunjite mari */
+  padding: 24px 32px;            /* spațiu interior generos */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);   /* umbră subtilă și modernă */
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  max-width: 480px;
+  margin: 16px auto;             /* centrat dacă vrei */
+  transition: all 0.3s ease;
+}
+
+.list-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Flex pentru aliniere perfectă număr + conținut */
+.list-card.d-flex {
+  align-items: center;
+  gap: 24px;
+}
+
+/* Cerculețul cu numărul */
+.list-card__number {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  background: #FFFFFF;
+  border: 3px solid #000000;       /* contur negru gros */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.list-card__number span {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000;
+  line-height: 1;
+}
+
+/* Titlul și descrierea */
+.list-card__title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 8px 0;
+  line-height: 1.3;
+}
+
+.list-card__description {
+  font-size: 15px;
+  line-height: 1.55;
+  color: #444444;
+  margin: 0;
+}
+
+/* Responsive – pe mobil devine vertical */
+@media (max-width: 576px) {
+  .list-card.d-flex {
+    flex-direction: column;
+    text-align: center;
+    padding: 32px 24px;
+  }
+  
+  .list-card__number {
+    margin-bottom: 16px;
+  }
+}
