@@ -10,6 +10,7 @@
   --white-color:#fff;
   --dark-color: #1C222B;
   --dark-slate-color: #3D4A5C;
+  --link-color: #2D3643;
   --green-w-color: #C9FF85;
   --font-family: "Open Sans", sans-serif;
   --font-heading: "Inter", sans-serif;
@@ -29,7 +30,7 @@ body {
 body {
   font-family: var(--font-family);
   background: var(--white-color);
-  color: var(--color-black);
+  color: var(---dark-slate-color);
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -88,7 +89,7 @@ h6 {
 }
 
 a {
-  color: var(--base-dark-color);
+  color: var(--link-color);
   text-decoration: none;
   transition: color 0.3s;
 }
