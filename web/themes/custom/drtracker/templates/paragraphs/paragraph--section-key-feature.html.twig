@@ -7,19 +7,16 @@
 
     <div class="key-feature-wrapper d-grid">
 
-      <div class="key-feature-content">
-        {% if paragraph.field_image_key %}
-          <div class="key-feature-image">
+      <div class="key-feature-image">
           {% if paragraph.field_image_key.entity %}
             {% set media = paragraph.field_image_key.entity %}
             {% if media.field_media_image.entity %}
            <img src="{{ file_url(media.field_media_image.entity.uri.value) }}" alt="{{ media.field_media_image.alt }}" />
           {% endif %}
           {% endif %} 
-        </div>
-      {% endif %}
+      </div>
 
-      <div class="key-feature-text">
+      <div class="key-feature-content">
         {% if paragraph.field_key_feature_title %}
           <h2>{{ paragraph.field_key_feature_title.value }}</h2>
         {% endif %}
@@ -27,15 +24,16 @@
           <p>{{ paragraph.field_key_feature_description.value }}</p>
         {% endif %}
       </div>
+
     </div>
 
 
-  </div>
+  
+
   <div class="key-feature-bottom-wrapper d-grid">
       <div class="key-feature-content_bottom">
-       
-        {% if paragraph.field_image_key_bottom %}
-          <div class="key-feature-image">
+      </div>
+       <div class="key-feature-image">
           {% if paragraph.field_image_key_bottom.entity %}
             {% set media = paragraph.field_image_key_bottom.entity %}
             {% if media.field_media_image.entity %}
@@ -43,7 +41,7 @@
           {% endif %}
           {% endif %} 
         </div>
-      {% endif %}
-
-      </div>
   </div>
+
+  </div>
+  </section>
