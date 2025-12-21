@@ -1,6 +1,7 @@
  .scroll-top.active{
     visibility: visible;
     opacity: 1;
+  color: var(--gray-color-25);
 }
 
 
