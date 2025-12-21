@@ -1,0 +1,18 @@
+<section class-"key-feature-section">
+  <div class="container">
+    <div class="key-feature-content">
+      {% if paragraph.field_image_key %}
+        <div class="key-feature-image">
+          {{ paragraph.field_image_key.entity|image_style('large') }}
+        </div>
+      {% endif %}
+      <div class="key-feature-text">
+        {% if paragraph.field_key_feature_title %}
+          <h2>{{ paragraph.field_key_feature_title.value }}</h2>
+        {% endif %}
+        {% if paragraph.field_key_feature_description %}
+          <p>{{ paragraph.field_key_feature_description.value }}</p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
