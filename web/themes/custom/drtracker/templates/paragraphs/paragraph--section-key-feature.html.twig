@@ -1,3 +1,8 @@
+{% set title_classes = [
+  'heading-title',
+  paragraph.field_title.value|length < 50 ? 'sm-line' : 'lg-line'
+] %}
+
 <section class="key-feature-section">
   <div class="container">
 
@@ -6,8 +11,8 @@
       {{ content.field_before_title }}
       {% if paragraph.field_title.value %}
         <div class="section-title">
-          <h2 class="heading-title sm-line">{{ paragraph.field_title.value }}</h2>
-        </div>
+  <h2 class="{{ title_classes|join(' ') }}">{{ paragraph.field_title.value }}</h2>
+</div>
       {% endif %}
     </div>
 
