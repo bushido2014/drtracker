@@ -270,3 +270,9 @@ h2.heading-title::after.sm-line {
 .plans-wrapp {
   margin-block: 30px; 
 }
+
+.billing-toggle {
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 40px;
+    }
