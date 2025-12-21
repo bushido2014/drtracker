@@ -332,3 +332,6 @@ box-shadow: 0 8px 24px rgba(13, 110, 253, 0.1);
 .plan-features li {
   padding:10px 0;
 }
+.plan-cta .btn-outline {
+  width: 100%;
+}
