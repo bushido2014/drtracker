@@ -245,6 +245,11 @@ h2.heading-title::after.sm-line {
 .key-feature-content {
   padding:30px;
 }
+
+.key-feature-content h4 {
+  margin-bottom: 1.6rem;
+}
+
 .key-feaure-list {
   padding-block: 20px; 
 }
@@ -252,6 +257,7 @@ h2.heading-title::after.sm-line {
 .icon-list {
   margin-right: 5px;
 }
+
 .icon-list .fa-circle-check {
   color: var(--primary-color);
 }
