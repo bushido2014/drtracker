@@ -23,5 +23,9 @@
     <div class="price-period">/month</div>
           </div>
  <div class="plan-description">{{ paragraph.field_plan_description.value }}</div>
-
+<ul class="plan-features">
+ {% for item in plan.field_plan_features %}
+                 <li class="d-flex"><span class="icon-list"><i class="fa-solid fa-circle-check"></i></span>{{ item.value }}</li>
+               {% endfor %}
+</ul>
 </div>
