@@ -54,6 +54,9 @@ h2.heading-title::after {
     background-color: var(--green-w-color); 
     z-index:-1;
 }
+h2.heading-title::after.sm-line {
+  width: 188px;
+}
 .hero-btns-wrapp {
   padding:25px 0;
   grid-column-gap:20px;
