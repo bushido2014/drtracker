@@ -212,3 +212,7 @@ h2.heading-title::after {
     margin-bottom: 16px;
   }
 }
+
+.key-feature-wrapper {
+  grid-template-columns: repeat(2, 1fr);
+}
