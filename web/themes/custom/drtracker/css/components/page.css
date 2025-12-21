@@ -6,6 +6,7 @@
 
 
 .scroll-top {
+    padding-top:8px;
     position: fixed;
     visibility: hidden;
     opacity: 0;
