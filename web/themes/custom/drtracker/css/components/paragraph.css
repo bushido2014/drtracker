@@ -42,7 +42,7 @@ h1.heading-title::after {
   right: 60px;
   width: 455px;
 }
-h2.heading-title::after {
+/*h2.heading-title::after {
       right: 120px;
        width: 298px;
 }
@@ -57,7 +57,30 @@ h2.heading-title::after {
 }
 h2.heading-title::after.sm-line {
   width: 188px;
+}*/
+
+/* Linia implicită pentru titluri lungi */
+.heading-title::after {
+  content: '';
+  position: absolute;
+  right: 120px;           /* distanța de la dreapta textului */
+  bottom: 6px;
+  width: 298px;           /* linie lungă */
+  height: 20px;
+  background: var(--green-w-color);
+  border-radius: 10px;
+  z-index: -1;
 }
+
+/* Suprascrie doar pentru titluri scurte */
+.heading-title.sm-line::after {
+  right: 120px;           /* sau 160px, 200px – ajustezi tu */
+  width: 188px;           /* linie scurtă */
+}
+
+
+
+
 .hero-btns-wrapp {
   padding:25px 0;
   grid-column-gap:20px;
