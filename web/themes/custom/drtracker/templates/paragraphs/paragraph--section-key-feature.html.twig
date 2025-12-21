@@ -1,11 +1,26 @@
 <section class-"key-feature-section">
   <div class="container">
-    <div class="key-feature-content">
-      {% if paragraph.field_image_key %}
-        <div class="key-feature-image">
-          {{ paragraph.field_image_key.entity|image_style('large') }}
+    <div class="section-title">
+      <h2 class="heading-title">{{paragraph.field_title.value}}</h2>
+      <div class="description">
+        {{paragraph.field_description.value| raw}}
+      </div>
+    </div>
+
+    <div class="key-feature-wrapper d-grid">
+
+      <div class="key-feature-content">
+        {% if paragraph.field_image_key %}
+          <div class="key-feature-image">
+          {% if paragraph.field_image_key.entity %}
+            {% set media = paragraph.field_image_key.entity %}
+            {% if media.field_media_image.entity %}
+           <img src="{{ file_url(media.field_media_image.entity.uri.value) }}" alt="{{ media.field_media_image.alt }}" />
+          {% endif %}
+          {% endif %} 
         </div>
       {% endif %}
+
       <div class="key-feature-text">
         {% if paragraph.field_key_feature_title %}
           <h2>{{ paragraph.field_key_feature_title.value }}</h2>
@@ -15,4 +30,22 @@
         {% endif %}
       </div>
     </div>
+
+
+  </div>
+  <div class="key-feature-bottom-wrapper d-grid">
+      <div class="key-feature-content_bottom">
+       
+        {% if paragraph.field_image_key_bottom %}
+          <div class="key-feature-image">
+          {% if paragraph.field_image_key_bottom.entity %}
+            {% set media = paragraph.field_image_key_bottom.entity %}
+            {% if media.field_media_image.entity %}
+           <img src="{{ file_url(media.field_media_image.entity.uri.value) }}" alt="{{ media.field_media_image.alt }}" />
+          {% endif %}
+          {% endif %} 
+        </div>
+      {% endif %}
+
+      </div>
   </div>
