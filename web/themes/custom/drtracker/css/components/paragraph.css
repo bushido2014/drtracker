@@ -267,3 +267,6 @@ h2.heading-title::after.sm-line {
 .plans-wrapp {
   grid-template-columns: repeat(3, 1fr);
 }
+.plans-wrapp {
+  margin-block: 30px; 
+}
