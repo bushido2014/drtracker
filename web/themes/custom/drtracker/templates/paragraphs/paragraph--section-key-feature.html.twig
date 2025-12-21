@@ -17,12 +17,20 @@
       </div>
 
       <div class="key-feature-content">
-        {% if paragraph.field_key_feature_title %}
-          <h2>{{ paragraph.field_key_feature_title.value }}</h2>
+        {% if paragraph.field_title_key %}
+          <h4>{{ paragraph.field_title_key.value }}</h4>
         {% endif %}
-        {% if paragraph.field_key_feature_description %}
-          <p>{{ paragraph.field_key_feature_description.value }}</p>
+        {% if paragraph.field_description_key %}
+          {{ paragraph.field_description_key.value|raw }}
         {% endif %}
+        <div class="key-feaure-list">
+          {% if paragraph.field_text_list_key %}
+            <ul>
+              {% for item in paragraph.field_text_list_key %}
+                <li class="d-flex"><span class="icon-list"><i class="fa-solid fa-circle-check"></i></span>{{ item.value }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
       </div>
 
     </div>
@@ -30,8 +38,22 @@
 
   
 
-  <div class="key-feature-bottom-wrapper d-grid">
-      <div class="key-feature-content_bottom">
+  <div class="key-feature-wrapper d-grid bottom-feature">
+      <div class="key-feature-content">
+      {% if paragraph.field_title_key_bottom %}
+          <h4>{{ paragraph.field_title_key_bottom.value }}</h4>
+        {% endif %}
+        {% if paragraph.field_description_key_bottom %}
+          {{ paragraph.field_description_key_bottom.value|raw }}
+        {% endif %}
+        <div class="key-feaure-list">
+            {% if paragraph.field_text_list_key_bottom %}
+              <ul>
+                {% for item in paragraph.field_text_list_key_bottom %}
+                  <li class="d-flex"><span class="icon-list"><i class="fa-solid fa-circle-check"></i></span>{{ item.value }}</li>
+                {% endfor %}
+              </ul>
+            {% endif %}
       </div>
        <div class="key-feature-image">
           {% if paragraph.field_image_key_bottom.entity %}
