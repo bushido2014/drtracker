@@ -264,6 +264,6 @@ h2.heading-title::after.sm-line {
 .icon-list .fa-circle-check {
   color: var(--primary-color);
 }
-.plans-wrapper {
+.plans-wrapp {
   grid-template-columns: repeat(3, 1fr);
 }
