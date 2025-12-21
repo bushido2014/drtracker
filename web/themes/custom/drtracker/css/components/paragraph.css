@@ -326,3 +326,9 @@ box-shadow: 0 8px 24px rgba(13, 110, 253, 0.1);
       font-size: 14px;
       color: #999;
     }
+.plan-features {
+   margin-bottom: 30px;
+}
+.plan-features li {
+  padding:10px 0;
+}
