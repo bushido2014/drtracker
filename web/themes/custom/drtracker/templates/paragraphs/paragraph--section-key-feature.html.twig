@@ -1,76 +1,89 @@
-<section class-"key-feature-section">
+<section class="key-feature-section">
   <div class="container">
+
+    {# Titlul secțiunii #}
     <div class="section-title">
-      {{content.field_before_title}}
-      <div class="feature-section-title"><h2 class="heading-title">{{paragraph.field_title.value}}</h2></div>
-   </div>
-
-    <div class="key-feature-wrapper d-grid">
-
-      <div class="key-feature-image">
-          {% if paragraph.field_image_key.entity %}
-            {% set media = paragraph.field_image_key.entity %}
-            {% if media.field_media_image.entity %}
-           <img src="{{ file_url(media.field_media_image.entity.uri.value) }}" alt="{{ media.field_media_image.alt }}" />
-          {% endif %}
-          {% endif %} 
-      </div>
-
-      <div class="key-feature-content">
-        {% if paragraph.field_title_key %}
-          <h4>{{ paragraph.field_title_key.value }}</h4>
-        {% endif %}
-        {% if paragraph.field_description_key %}
-          {{ paragraph.field_description_key.value|raw }}
-        {% endif %}
-        test
-        <div class="key-feaure-list">
-          {% if paragraph.field_text_list_key %}
-            <ul>
-              {% for item in paragraph.field_text_list_key %}
-                <li class="d-flex"><span class="icon-list"><i class="fa-solid fa-circle-check"></i></span>{{ item.value }}</li>
-              {% endfor %}
-            </ul>
-          {% endif %}
-      </div>
-
+      {{ content.field_before_title }}
+      {% if paragraph.field_title.value %}
+        <div class="feature-section-title">
+          <h2 class="heading-title">{{ paragraph.field_title.value }}</h2>
+        </div>
+      {% endif %}
     </div>
 
-</div>
-  
+    {# === PRIMUL BLOC: Imagine stânga → Text dreapta === #}
+    <div class="key-feature-wrapper d-grid top-feature">
+      <div class="key-feature-image">
+        {% if paragraph.field_image_key.entity %}
+          {% set media = paragraph.field_image_key.entity %}
+          {% if media.field_media_image.entity %}
+            <img src="{{ file_url(media.field_media_image.entity.uri.value) }}"
+                 alt="{{ media.field_media_image.alt }}"
+                 loading="lazy" />
+          {% endif %}
+        {% endif %}
+      </div>
 
-  <div class="key-feature-wrapper d-grid bottom-feature">
       <div class="key-feature-content">
-      {% if paragraph.field_title_key_bottom %}
+        {% if paragraph.field_title_key.value %}
+          <h4>{{ paragraph.field_title_key.value }}</h4>
+        {% endif %}
+
+        {% if paragraph.field_description_key.value %}
+          {{ paragraph.field_description_key.value|raw }}
+        {% endif %}
+
+        {% if paragraph.field_text_list_key|length %}
+          <div class="key-feaure-list">
+            <ul>
+              {% for item in paragraph.field_text_list_key %}
+                <li class="d-flex">
+                  <span class="icon-list"><i class="fa-solid fa-circle-check"></i></span>
+                  {{ item.value|raw }}
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+
+    {# === AL DOILEA BLOC: Text stânga → Imagine dreapta === #}
+    <div class="key-feature-wrapper d-grid bottom-feature reverse">
+      <div class="key-feature-content">
+        {% if paragraph.field_title_key_bottom.value %}
           <h4>{{ paragraph.field_title_key_bottom.value }}</h4>
         {% endif %}
-        {% if paragraph.field_description_key_bottom %}
+
+        {% if paragraph.field_description_key_bottom.value %}
           {{ paragraph.field_description_key_bottom.value|raw }}
         {% endif %}
-        <div class="key-feaure-list">
-            {% if paragraph.field_text_list_key_bottom %}
-              <ul>
-                {% for item in paragraph.field_text_list_key_bottom %}
-                  <li class="d-flex"><span class="icon-list"><i class="fa-solid fa-circle-check"></i></span>{{ item.value }}</li>
-                {% endfor %}
-              </ul>
-            {% endif %}
+
+        {% if paragraph.field_text_list_key_bottom|length %}
+          <div class="key-feaure-list">
+            <ul>
+              {% for item in paragraph.field_text_list_key_bottom %}
+                <li class="d-flex">
+                  <span class="icon-list"><i class="fa-solid fa-circle-check"></i></span>
+                  {{ item.value|raw }}
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endif %}
       </div>
-        <div class="key-feature-image">
-          {% if paragraph.field_image_key_bottom.entity %}
-            {% set media = paragraph.field_image_key_bottom.entity %}
-            {% if media.field_media_image.entity %}
-           <img src="{{ file_url(media.field_media_image.entity.uri.value) }}" alt="{{ media.field_media_image.alt }}" />
+
+      <div class="key-feature-image">
+        {% if paragraph.field_image_key_bottom.entity %}
+          {% set media = paragraph.field_image_key_bottom.entity %}
+          {% if media.field_media_image.entity %}
+            <img src="{{ file_url(media.field_media_image.entity.uri.value) }}"
+                 alt="{{ media.field_media_image.alt }}"
+                 loading="lazy" />
           {% endif %}
-          {% endif %} 
-        </div>
-
-
-  </div>
-
-
-
-
+        {% endif %}
+      </div>
+    </div>
 
   </div>
-  </section>
+</section>
