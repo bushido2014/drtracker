@@ -1,14 +1,16 @@
 {#
 /**
  * @file
- * Card paragraph template
+ * Plan paragraph template
  */
 #}
 {% set classes = [
-  'plan-card'
+  'plan-card',
+  'paragraph--type--plan',
 ] %}
 
 <div{{ attributes.addClass(classes) }}>
+
  <div class="plan-name">{{ paragraph.field_plan_name.value }}</div>
  <div class="price-section">
       <div class="price">
@@ -21,4 +23,5 @@
     <div class="price-period">/month</div>
           </div>
  <div class="plan-description">{{ paragraph.field_plan_description.value }}</div>
+
 </div>
