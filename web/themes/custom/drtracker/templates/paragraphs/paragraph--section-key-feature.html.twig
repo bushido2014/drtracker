@@ -40,6 +40,16 @@
   
 
   <div class="key-feature-wrapper d-grid bottom-feature">
+
+     <div class="key-feature-image">
+          {% if paragraph.field_image_key_bottom.entity %}
+            {% set media = paragraph.field_image_key_bottom.entity %}
+            {% if media.field_media_image.entity %}
+           <img src="{{ file_url(media.field_media_image.entity.uri.value) }}" alt="{{ media.field_media_image.alt }}" />
+          {% endif %}
+          {% endif %} 
+        </div>
+
       <div class="key-feature-content">
       {% if paragraph.field_title_key_bottom %}
           <h4>{{ paragraph.field_title_key_bottom.value }}</h4>
@@ -56,15 +66,12 @@
               </ul>
             {% endif %}
       </div>
-       <div class="key-feature-image">
-          {% if paragraph.field_image_key_bottom.entity %}
-            {% set media = paragraph.field_image_key_bottom.entity %}
-            {% if media.field_media_image.entity %}
-           <img src="{{ file_url(media.field_media_image.entity.uri.value) }}" alt="{{ media.field_media_image.alt }}" />
-          {% endif %}
-          {% endif %} 
-        </div>
+       
   </div>
+
+</div>
+
+
 
   </div>
   </section>
