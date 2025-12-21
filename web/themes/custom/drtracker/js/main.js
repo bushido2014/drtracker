@@ -50,14 +50,31 @@ document.addEventListener('scroll', toggleScrollTop);
 
 
 
+//      
+document.addEventListener('DOMContentLoaded', function() {
+  const toggleBtns = document.querySelectorAll('.toggle-btn');
+  const priceElements = document.querySelectorAll('.plan-price');
 
+  toggleBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      const billingType = this.dataset.billing;
+
+      // Update active button
+      toggleBtns.forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+
+      // Update prices
+      priceElements.forEach(price => {
+        const newPrice = price.dataset[billingType];
+        price.textContent = newPrice;
+      });
+    });
+  });
+});
+
+
+
+      
     },
-
-
-
-
-
-
-
   };
 })(Drupal, once);
