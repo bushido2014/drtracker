@@ -24,8 +24,14 @@
           </div>
  <div class="plan-description">{{ paragraph.field_plan_description.value }}</div>
 <ul class="plan-features">
- {% for item in plan.field_plan_features %}
-                 <li class="d-flex"><span class="icon-list"><i class="fa-solid fa-circle-check"></i></span>{{ item.value }}</li>
-               {% endfor %}
+{% for item in paragraph.field_plan_features %}
+  <li class="d-flex">
+    <span class="icon-list"><i class="fa-solid fa-circle-check"></i></span>
+    {{ item.value }}
+  </li>
+{% endfor %}
 </ul>
+<div class="plan-cta">
+  {{content.field_link_outline}}
+</div>
 </div>
