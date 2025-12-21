@@ -1,0 +1,26 @@
+{#
+/**
+ * @file
+ * Card paragraph template
+ */
+#}
+{% set classes = [
+  'plan-card'
+] %}
+
+<div{{ attributes.addClass(classes) }}>
+ <div class="plan-name">{{ paragraph.field_plan_name.value }}</div>
+ <div class="price-section">
+            <div class="price">
+              <span class="price-currency">$</span>
+              <span 
+                class="plan-price" 
+                data-monthly="{{ paragraph.field_plan_price_monthly.value }}"
+                data-yearly="{{ paragraph.field_plan_price_yearly.value }}"
+              >
+                {{ paragraph.field_plan_price_monthly.value  }}
+              </span>
+            </div>
+            <div class="price-period">/month</div>
+          </div>
+</div>
