@@ -253,7 +253,10 @@ h2.heading-title::after.sm-line {
 .key-feaure-list {
   padding-block: 20px; 
 }
-
+.top-feature .key-feaure-list ul {
+  column-count: 2; 
+  column-gap: 40px; 
+}
 .icon-list {
   margin-right: 5px;
 }
