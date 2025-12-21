@@ -241,3 +241,10 @@ h2.heading-title::after.sm-line {
 .key-feature-wrapper {
   grid-template-columns: repeat(2, 1fr);
 }
+
+.key-feature-content {
+  padding:30px;
+}
+.key-feaure-list {
+  padding-block: 20px; 
+}
