@@ -27,15 +27,16 @@
   color: #F15757;
 }
 .section-title {
-  padding: 10px;
-  position:relative;
+  position: relative;
   max-width: 860px;
-  margin: 10px auto;
-  text-align:center;
+  margin: 30px auto 70px;
+  text-align: center;
 }
+
 .heading-title {
-  position:relative;
-  z-index:1;
+  display: inline;
+  position: relative;
+  z-index: 1;
 }
 h1.heading-title::after {
   right: 60px;
