@@ -1,0 +1,71 @@
+
+<section class="business-secure">
+  <!-- Content Left -->
+  <div class="content-left">
+    {% if paragraph.field_title.value %}
+      <h2>{{ paragraph.field_title.value }}</h2>
+    {% endif %}
+
+    {% if paragraph.field_description.value %}
+      <p>{{ paragraph.field_description.value | raw }}</p>
+    {% endif %}
+        <div class"link-cta">
+           {{content.field_link_outline}}
+        </div>
+  </div>
+
+  <!-- Images Right -->
+  <div class="images-container">
+    <!-- Top Right -->
+    {% if paragraph.field_image_top_right.entity %}
+      {% set media = paragraph.field_image_top_right.entity %}
+      {% if media.field_media_image.entity %}
+        <div class="image-card image-top-right">
+          <img 
+            src="{{ file_url(media.field_media_image.entity.uri.value) }}"
+            alt="{{ media.field_media_image.alt }}"
+          />
+        </div>
+      {% endif %}
+    {% endif %}
+
+    <!-- Center Right -->
+    {% if paragraph.field_image_center_right.entity %}
+      {% set media = paragraph.field_image_center_right.entity %}
+      {% if media.field_media_image.entity %}
+        <div class="image-card image-center-right">
+          <img 
+            src="{{ file_url(media.field_media_image.entity.uri.value) }}"
+            alt="{{ media.field_media_image.alt }}"
+          />
+        </div>
+      {% endif %}
+    {% endif %}
+
+    <!-- Bottom Left -->
+    {% if paragraph.field_image_bottom_left.entity %}
+      {% set media = paragraph.field_image_bottom_left.entity %}
+      {% if media.field_media_image.entity %}
+        <div class="image-card image-bottom-left">
+          <img 
+            src="{{ file_url(media.field_media_image.entity.uri.value) }}"
+            alt="{{ media.field_media_image.alt }}"
+          />
+        </div>
+      {% endif %}
+    {% endif %}
+
+    <!-- Bottom Right -->
+    {% if paragraph.field_image_bottom_right.entity %}
+      {% set media = paragraph.field_image_bottom_right.entity %}
+      {% if media.field_media_image.entity %}
+        <div class="image-card image-bottom-right">
+          <img 
+            src="{{ file_url(media.field_media_image.entity.uri.value) }}"
+            alt="{{ media.field_media_image.alt }}"
+          />
+        </div>
+      {% endif %}
+    {% endif %}
+  </div>
+</section>
