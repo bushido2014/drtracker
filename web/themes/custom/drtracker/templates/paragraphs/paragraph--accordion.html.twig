@@ -1,0 +1,17 @@
+<section class="faq">
+   <div class="container">
+     <div class="faq-wrapp d-grid">
+       <div class="faq-item faq-content">
+            <div class="section-title">
+         {{ content.field_before_title }}
+      <div class="feature-section-title"><h2 class="heading-title">{{paragraph.field_title.value}}</h2></div>
+        {{ paragraph.field_description.value|raw }}
+        {{ content.field_link_icon }}
+       </div>
+       </div>
+       <div class="faq-item faq-accordion">
+     {{content.field_paragraph_accordion}}
+       </div>
+     </div>
+   </div>
+</section>
