@@ -343,10 +343,7 @@ box-shadow: 0 8px 24px rgba(13, 110, 253, 0.1);
 .accordion {
   overflow: hidden;
   background: white;
-}
-
-.accordion-item {
-  border: 1px bottom solid var(--bg-blue-color);
+  border-bottom: 1px solid var(--primary-color);
 }
 
 /*.accordion-item:last-child {
