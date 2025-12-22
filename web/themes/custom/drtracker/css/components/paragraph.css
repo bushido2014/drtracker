@@ -385,7 +385,7 @@ box-shadow: 0 8px 24px rgba(13, 110, 253, 0.1);
 }
 
 .accordion-button.active .accordion-icon {
-  transform: rotate(180deg);
+  transform: rotate(45deg);
 }
 
 .accordion-body {
