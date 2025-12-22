@@ -339,8 +339,8 @@ box-shadow: 0 8px 24px rgba(13, 110, 253, 0.1);
 .faq-wrapp {
   grid-template-columns: repeat(2, 1fr);
 }
+
 .accordion {
-  
   overflow: hidden;
   background: white;
 }
@@ -349,9 +349,9 @@ box-shadow: 0 8px 24px rgba(13, 110, 253, 0.1);
   border: 1px bottom solid var(--bg-blue-color);
 }
 
-.accordion-item:last-child {
+/*.accordion-item:last-child {
   border-bottom: none;
-}
+}*/
 
 .accordion-button {
   width: 100%;
