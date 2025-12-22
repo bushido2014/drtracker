@@ -337,3 +337,6 @@ box-shadow: 0 8px 24px rgba(13, 110, 253, 0.1);
 .plan-cta .btn-outline {
   width: 100%;
 }
+.faq-wrapp {
+  grid-template-columns: repeat(2, 1fr);
+}
