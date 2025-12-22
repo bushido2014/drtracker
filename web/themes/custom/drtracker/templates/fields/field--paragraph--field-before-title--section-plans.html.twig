@@ -1,0 +1,17 @@
+<div{{ attributes.addClass('before-title') }}>
+<div class="d-flex">
+  {% if not label_hidden %}
+    <h3{{ title_attributes }}>{{ label }}</h3>
+  {% endif %}
+
+  <span class="before-title-icon">
+    <i class="fa-solid fa-fire"></i>
+  </span>
+
+  {% for item in items %}
+    <span class="before-title-text">
+      {{ item.content }}
+    </span>
+  {% endfor %}
+  </div>
+</div>
