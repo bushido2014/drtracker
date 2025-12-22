@@ -400,3 +400,10 @@ box-shadow: 0 8px 24px rgba(13, 110, 253, 0.1);
   opacity: 1;
   padding: 20px;
 }
+.business-secure {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+.business-wrapp {
+  grid-template-columns: repeat(2, 1fr);
+}
