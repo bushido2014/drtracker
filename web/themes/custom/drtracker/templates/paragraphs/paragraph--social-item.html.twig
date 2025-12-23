@@ -1,10 +1,16 @@
-<a href="{{ paragraph.field_social_link.uri }}" 
-   class="social-icon-link"
-   title="{{ paragraph.field_social_name.value }}"
-   target="_blank"
-   rel="noopener noreferrer"
->
-  
-    {{content.field_social_icon}}
- 
-</a>
+<div class="social-links">
+  {% for item in content.field_social_items %}
+    {% set paragraph = item['#paragraph'] %}
+    
+    <a href="{{ paragraph.field_social_link.uri }}" 
+       class="social-icon-link"
+       title="{{ paragraph.field_social_name.value }}"
+       target="_blank"
+       rel="noopener noreferrer"
+    >
+      {% if paragraph.field_social_icon %}
+        {{ paragraph.field_social_icon.value }}
+      {% endif %}
+    </a>
+  {% endfor %}
+</div>
