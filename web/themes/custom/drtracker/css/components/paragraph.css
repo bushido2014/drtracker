@@ -414,9 +414,10 @@ box-shadow: 0 8px 24px rgba(13, 110, 253, 0.1);
   grid-template-columns: repeat(2, 1fr);
 }
 
-.content-left {
-  color: var(--white-color)!important;
+.content-left,.content-left h2 {
+  color: var(--white-color);
 }
+
 .images-container {
   position: relative;
   width: 100%;
@@ -449,7 +450,7 @@ box-shadow: 0 8px 24px rgba(13, 110, 253, 0.1);
 
 .image-bottom-left {
   bottom: 0;
-  left: 0;
+  left: 12px;
   width: 170px;
   height: 145px;
   z-index: 1;
