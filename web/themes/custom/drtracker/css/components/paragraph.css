@@ -450,7 +450,7 @@ box-shadow: 0 8px 24px rgba(13, 110, 253, 0.1);
 .image-bottom-left {
   bottom: 0;
   left: 0;
-  width: 200px;
+  width: 170px;
   height: 145px;
   z-index: 1;
 }
