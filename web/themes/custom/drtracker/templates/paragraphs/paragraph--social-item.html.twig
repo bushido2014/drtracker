@@ -4,7 +4,7 @@
    target="_blank"
    rel="noopener noreferrer"
 >
-  {% if paragraph.field_social_icon.0 %}
-    <i class="fas fa-{{ paragraph.field_social_icon.0.icon_name }}"></i>
+  {% if paragraph.field_social_icon %}
+    {{paragraph.field_social_icon.value}}
   {% endif %}
 </a>
