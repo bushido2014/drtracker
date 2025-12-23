@@ -436,8 +436,8 @@ box-shadow: 0 8px 24px rgba(13, 110, 253, 0.1);
 }
 
 .image-center-right {
-  top: 140px;
-  right: 80px;
+  top: 90px;
+  right: 140px;
   width: 320px;
   height: auto;
   z-index: 2;
@@ -452,9 +452,9 @@ box-shadow: 0 8px 24px rgba(13, 110, 253, 0.1);
 }
 
 .image-bottom-right {
-  bottom: 20px;
-  right: 200px;
+  bottom: 0;
+  right: 0;
   width: 280px;
-  height: auto;
+  height: 200px;
   z-index: 2;
 }
