@@ -14,10 +14,12 @@
 
 
 
-
- {% if content.field_plans|render %}
+<div class="plans-wrapp d-grid">
+{{ content.field_plans}}
+</div>
+ {#{% if content.field_plans|render %}
           {{ content.field_plans|without('wrapper') }}
-    {% endif %}
+    {% endif %}#}
 
 
 
