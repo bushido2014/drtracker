@@ -1,4 +1,4 @@
-<div class="social-links">
+{#<div class="social-links">
   {% for item in content.field_social_items %}
     {% set paragraph = item['#paragraph'] %}
     
@@ -13,4 +13,15 @@
       {% endif %}
     </a>
   {% endfor %}
-</div>
+</div>#}
+
+<a href="{{ paragraph.field_social_link.uri }}" 
+   class="social-icon-link"
+   title="{{ paragraph.field_social_name.value }}"
+   target="_blank"
+   rel="noopener noreferrer"
+>
+  {% if content.field_social_icon %}
+    {{ content.field_social_icon }}
+  {% endif %}
+</a>
