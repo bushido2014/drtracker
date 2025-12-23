@@ -440,7 +440,7 @@ box-shadow: 0 8px 24px rgba(13, 110, 253, 0.1);
   right: 140px;
   width: 320px;
   height: auto;
-  z-index: 2;
+  z-index: 3;
 }
 
 .image-bottom-left {
