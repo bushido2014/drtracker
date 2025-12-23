@@ -2,7 +2,7 @@
   {% for item in content.field_social_items %}
     {% set social = item['#paragraph'] %}
     
-    <a href="{{ social.field_social_link.0.url }}" 
+    <a href="{{ social.field_social_link.uri }}" 
        class="social-icon-link"
        title="{{ social.field_social_name.value }}"
        target="_blank"
@@ -11,4 +11,4 @@
       {{ social.field_social_icon }}
     </a>
   {% endfor %}
-</div
+</div>
