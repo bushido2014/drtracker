@@ -64,10 +64,40 @@
     </div>
   {% endif %}
 
-  {# Footer #}
-  {% if page.footer %}
-    <footer role="contentinfo" class="site-footer">
-      {{ page.footer }}
-    </footer>
-  {% endif %}
 
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-wrapp d-grid">
+  {% if page.footer_first %}
+  <div class="footer-column footer-col-1">
+    {{ page.footer_first }}
+  </div>
+   {% endif %}
+
+{% if page.footer_second %}
+  <div class="footer-column footer-col-2">
+    {{ page.footer_second }}
+  </div>
+{% endif %}
+
+{% if page.footer_third %}
+  <div class="footer-column footer-col-3">
+    {{ page.footer_third }}
+  </div>
+{% endif %}
+
+{% if page.footer_fourth %}
+  <div class="footer-column footer-col-4">
+    {{ page.footer_fourth }}
+  </div>
+{% endif %}
+
+</div>
+
+
+{% if page.footer_bottom %}
+   <div class="footer-bottom"> {{ page.footer_bottom }}</div>
+{% endif %}
+
+ </div>
+</footer>
