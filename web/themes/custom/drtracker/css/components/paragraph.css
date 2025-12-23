@@ -279,6 +279,7 @@ h2.heading-title::after.sm-line {
   gap: 10px;
   margin-bottom: 40px;
  }
+
 .plan-card {
  background-color: var(--white-color);
   border: 1px solid var(--gray-color-25);
@@ -286,11 +287,13 @@ h2.heading-title::after.sm-line {
   padding: 40px 30px;
  transition: all 0.3s ease;
 }
+
 .plan-card:hover {
 border-color: var(--primary-color);
 box-shadow: 0 8px 24px rgba(13, 110, 253, 0.1);
  transform: translateY(-5px);
 }
+
 .plan-name {
       font-size: 22px;
       font-weight: 600;
@@ -410,8 +413,9 @@ box-shadow: 0 8px 24px rgba(13, 110, 253, 0.1);
 .business-wrapp {
   grid-template-columns: repeat(2, 1fr);
 }
+
 .content-left {
-  color: var(--white-color);
+  color: var(--white-color)!important;
 }
 .images-container {
   position: relative;
