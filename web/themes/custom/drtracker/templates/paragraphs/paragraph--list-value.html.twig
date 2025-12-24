@@ -5,18 +5,17 @@
  */
 #}
 {% set classes = [
-  'list-counter',
+  'counter-item',
 ] %}
 
 <div{{ attributes.addClass(classes) }}>
 
-<div class="item-value d-flex">
-
-<div class="number">{{paragraph.field_value_number.value}}<span>+</span></div>
-</div>
-<div class="item-text">
-<div class="text">{{paragraph.field_value_text.value}}</div>
-</div>
+<div class="counter-number">
+    {{ paragraph.field_counter_number.value }}<span>+</span>
+  </div>
+  <div class="counter-label">
+    {{ paragraph.field_counter_label.value }}
+  </div>
 
 
 </div>
