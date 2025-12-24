@@ -464,6 +464,17 @@ box-shadow: 0 8px 24px rgba(13, 110, 253, 0.1);
   z-index: 2;
 }
 
+
+.about-us-wrapp {
+  gap: 40px;
+}
+.about-us-video {
+  width: 70%;
+}
+.about-us-content {
+  width: 30%;
+}
+
 .video-thumbnail {
   position: relative;
   display: block;
