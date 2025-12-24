@@ -10,6 +10,26 @@
 <div class="about-us-wrapp d-flex">
 
 <div class="about-us-video">
+ {% if paragraph.field_image.entity %}
+          {% set media = paragraph.field_image.entity %}
+          {% if media.field_media_image.entity %}
+            
+            <a href="{{ paragraph.field_video_link.uri }}" 
+               class="video-thumbnail"
+               target="_blank"
+               rel="noopener noreferrer"
+            >
+              <img 
+                src="{{ file_url(media.field_media_image.entity.uri.value) }}"
+                alt="{{ media.field_media_image.alt }}"
+              />
+              <div class="play-button">
+                <i class="fas fa-play"></i>
+              </div>
+            </a>
+            
+          {% endif %}
+        {% endif %}
 </div>
 <div class="about-us-content">
 </div>
