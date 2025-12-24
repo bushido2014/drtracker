@@ -516,3 +516,33 @@ box-shadow: 0 8px 24px rgba(13, 110, 253, 0.1);
   transform: translate(-50%, -50%) scale(1.1);
   box-shadow: 0 15px 40px rgba(124, 58, 237, 0.6);
 }
+
+.counters-wrapper {
+  background: var(--primary-color);
+  padding: 60px 40px;
+  border-radius: 16px;
+}
+
+
+.counter-item {
+  text-align: center;
+  padding: 40px 20px;
+  color: white;
+}
+
+.counter-number {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 15px;
+}
+
+.counter-number span {
+  font-size: 32px;
+}
+
+.counter-label {
+  font-size: 16px;
+  opacity: 0.9;
+  line-height: 1.6;
+}
