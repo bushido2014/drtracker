@@ -7,4 +7,6 @@ footer {
 .footer-wrapp {
   grid-template-columns: repeat(4, 1fr);
 }
-
+.social-links {
+  gap:10px;
+}
