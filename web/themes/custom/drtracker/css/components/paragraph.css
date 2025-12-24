@@ -475,7 +475,7 @@ box-shadow: 0 8px 24px rgba(13, 110, 253, 0.1);
 .about-us-content {
   width: 30%;
   background: var(--primary-color);
-  padding: 60px 40px;
+  padding: 40px;
   border-radius: 16px;
 }
 
@@ -532,14 +532,12 @@ box-shadow: 0 8px 24px rgba(13, 110, 253, 0.1);
   box-shadow: 0 15px 40px rgba(124, 58, 237, 0.6);
 }
 
-.counters-wrapper {
- padding:2px;
-}
+
 
 
 .counter-item {
   text-align: center;
-  padding: 40px 20px;
+  padding: 20px;
   color: white;
 }
 
