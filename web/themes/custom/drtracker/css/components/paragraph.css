@@ -473,6 +473,9 @@ box-shadow: 0 8px 24px rgba(13, 110, 253, 0.1);
 }
 .about-us-content {
   width: 30%;
+  background: var(--primary-color);
+  padding: 60px 40px;
+  border-radius: 16px;
 }
 
 .video-thumbnail {
@@ -529,9 +532,7 @@ box-shadow: 0 8px 24px rgba(13, 110, 253, 0.1);
 }
 
 .counters-wrapper {
-  background: var(--primary-color);
-  padding: 60px 40px;
-  border-radius: 16px;
+ padding:2px;
 }
 
 
