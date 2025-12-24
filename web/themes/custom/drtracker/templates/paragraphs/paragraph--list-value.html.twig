@@ -1,0 +1,22 @@
+{#
+/**
+ * @file
+ * List Value Template
+ */
+#}
+{% set classes = [
+  'list-counter',
+] %}
+
+<div{{ attributes.addClass(classes) }}>
+
+<div class="item-value d-flex">
+
+<div class="number">{{paragraph.field_value_number.value}}<span>+</span></div>
+</div>
+<div class="item-text">
+<div class="text">{{paragraph.field_value_text.value}}</div>
+</div>
+
+
+</div>
