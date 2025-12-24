@@ -467,6 +467,7 @@ box-shadow: 0 8px 24px rgba(13, 110, 253, 0.1);
 
 .about-us-wrapp {
   gap: 40px;
+  align-items: stretch;
 }
 .about-us-video {
   width: 70%;
