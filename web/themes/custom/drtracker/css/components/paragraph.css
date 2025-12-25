@@ -237,7 +237,7 @@ h2.heading-title::after.sm-line {
   }
 }
 
-.key-feature-wrapper,.connection-wrapp {
+.key-feature-wrapper,.connection-wrapp,.story-wrapp {
   grid-template-columns: repeat(2, 1fr);
 }
 
