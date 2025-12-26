@@ -5,19 +5,19 @@
  */
 #}
 {% set classes = [
-  'counters-wrapper',
+  'counter-item',
 ] %}
 
 <div{{ attributes.addClass(classes) }}>
 
-<div class="counter-item">
+
   <div class="counter-number">
     {{ paragraph.field_value_number.value }}<span>+</span>
   </div>
   <div class="counter-label">
     {{ paragraph.field_value_text.value }}
   </div>
-</div>
+
 
 
 </div>
