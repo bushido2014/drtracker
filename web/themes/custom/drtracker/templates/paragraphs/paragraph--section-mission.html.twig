@@ -3,5 +3,31 @@
     <div class="section-title">
     <h2 class="heading-title">{{paragraph.field_title.value}}</h2>
 </div>
+
+
+<div class="cards-wrapper d-grid cols-3">
+        {% for card_ms in paragraph.field_card_mision %}
+          {% set card = card_ms.entity %}
+          {% if card %}
+            <div class="card-mission">
+              {% if card.field_title.value %}
+                <h3 class="card-title">{{ card.field_title.value }}</h3>
+              {% endif %}
+    
+              {% if card.field_description.value %}
+                <div class="card-description">{{ card.field_description.value|raw }}</div>
+              {% endif %}
+              <div class="card-img">
+            
+             </div>
+
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+
+
+
 </div>
 </section>
