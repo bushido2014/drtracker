@@ -568,6 +568,13 @@ box-shadow: 0 8px 24px rgba(13, 110, 253, 0.1);
     border-bottom: 1px solid var(--white-color);
 }
 
-.mision {
+.mision, .values {
  background-color: var(--gray-color);
+}
+
+.card-value {
+   background-color: var(--white-color);  
+   border-radius: 16px;
+   text-align: center;
+   padding:20px;
 }
