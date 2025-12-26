@@ -1,0 +1,50 @@
+<section class="values">
+<div class="container">
+   <div class="section-title">
+      {{content.field_before_title}}
+      <div class="values-section-title"><h2 class="heading-title">{{paragraph.field_title.value}}</h2></div>
+   </div>
+
+
+
+<div class="cards-wrapper d-grid cols-4">
+  {% for card_vl in paragraph.field_card_value %}
+    {% set card = card_vl.entity %}
+    {% if card %}
+      <div class="card-value">
+
+         <div class="card-img">
+          {% if card.field_image.entity %}
+            {% set media = card.field_image.entity %}
+            {% if media.field_media_image.entity %}
+              <img
+                src="{{ file_url(media.field_media_image.entity.uri.value) }}"
+                alt="{{ media.field_media_image.alt }}"
+                loading="lazy"
+              />
+            {% endif %}
+          {% endif %}
+        </div>
+
+
+        {% if card.field_title.value %}
+          <h5 class="card-title">{{ card.field_title.value }}</h5>
+        {% endif %}
+
+        {% if card.field_description.value %}
+          <div class="card-description">{{ card.field_description.value | raw }}</div>
+        {% endif %}
+
+      
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
+
+
+
+
+
+
+</div>
+</section>
