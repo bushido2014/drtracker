@@ -557,3 +557,9 @@ box-shadow: 0 8px 24px rgba(13, 110, 253, 0.1);
   opacity: 0.9;
   line-height: 1.6;
 }
+
+.story-images {
+  align-items: stretch;
+  gap:20px;
+}
+
