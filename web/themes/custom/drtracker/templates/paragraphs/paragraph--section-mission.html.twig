@@ -6,33 +6,34 @@
 
 
 <div class="cards-wrapper d-grid cols-2">
-        {% for card_ms in paragraph.field_card_mision %}
-          {% set card = card_ms.entity %}
-          {% if card %}
-            <div class="card-mission">
-              {% if card.field_title.value %}
-                <h4 class="card-title">{{ card.field_title.value }}</h4>
-              {% endif %}
-    
-              {% if card.field_description.value %}
-                <div class="card-description">{{ card.field_description.value|raw }}</div>
-              {% endif %}
-              <div class="card-img">
-
-                {% if card.field_image.0.entity %} 
-               {% set image_file = card.field_image.0.entity %}
-              <img
-              src="{{ file_url(image_file.uri.value) }}"  alt="{{ media.field_media_image.alt }}" loading="lazy" />
+  {% for card_ms in paragraph.field_card_mision %}
+    {% set card = card_ms.entity %}
+    {% if card %}
+      <div class="card-mission">
+        {% if card.field_title.value %}
+          <h4 class="card-title">{{ card.field_title.value }}</h4>
         {% endif %}
-          
 
+        {% if card.field_description.value %}
+          <div class="card-description">{{ card.field_description.value | raw }}</div>
+        {% endif %}
 
-             </div>
-
-            </div>
+        <div class="card-img">
+          {% if card.field_image.entity %}
+            {% set media = card.field_image.entity %}
+            {% if media.field_media_image.entity %}
+              <img
+                src="{{ file_url(media.field_media_image.entity.uri.value) }}"
+                alt="{{ media.field_media_image.alt }}"
+                loading="lazy"
+              />
+            {% endif %}
           {% endif %}
-        {% endfor %}
+        </div>
       </div>
+    {% endif %}
+  {% endfor %}
+</div>
 
 
 
