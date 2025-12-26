@@ -562,7 +562,8 @@ box-shadow: 0 8px 24px rgba(13, 110, 253, 0.1);
   align-items: stretch;
   gap:20px;
 }
-.counters-wrapper .counters-wrapper:nth-child(2){
+
+.counters-wrapper .counter-item:nth-of-type(2) {
     border-top: 1px solid var(--white-color);
     border-bottom: 1px solid var(--white-color);
 }
