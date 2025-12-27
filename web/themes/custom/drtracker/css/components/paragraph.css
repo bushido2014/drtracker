@@ -346,12 +346,12 @@ box-shadow: 0 8px 24px rgba(13, 110, 253, 0.1);
 .accordion {
   overflow: hidden;
   background: white;
-  border-bottom: 1px solid var(--primary-color);
 }
 
-/*.accordion-item:last-child {
+.accordion-item {
   border-bottom: none;
-}*/
+  border-bottom: 1px solid var(--primary-color);
+}
 
 .accordion-button {
   width: 100%;
