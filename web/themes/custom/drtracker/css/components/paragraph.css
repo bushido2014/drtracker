@@ -349,7 +349,6 @@ box-shadow: 0 8px 24px rgba(13, 110, 253, 0.1);
 }
 
 .accordion-item {
-  border-bottom: none;
   border-bottom: 1px solid var(--primary-color);
 }
 
