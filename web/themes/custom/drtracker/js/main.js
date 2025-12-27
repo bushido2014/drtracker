@@ -6,7 +6,7 @@
 (function (Drupal, once) {
   "use strict";
 
-  const swiper = new Swiper(".testimonial-slider", {
+  /*const swiper = new Swiper(".testimonial-slider", {
     loop: true,
     spaceBetween: 30,
     breakpoints: {
@@ -17,7 +17,7 @@
         slidesPerView: 2,
       },
     },
-  });
+  });*/
 
   Drupal.behaviors.drteacker = {
     attach: function (context, settings) {
