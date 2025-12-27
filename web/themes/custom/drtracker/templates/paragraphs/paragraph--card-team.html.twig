@@ -1,0 +1,41 @@
+{#
+/**
+ * @file
+ * Card paragraph template
+ */
+#}
+{% set classes = [
+  'card-team',
+  'paragraph--type--card',
+] %}
+
+<div{{ attributes.addClass(classes) }}>
+  
+ {% if paragraph.field_image.entity %} {% set media =
+                paragraph.field_image.entity %} {% if
+                media.field_media_image.entity %}
+            <div class="card__image">
+
+                <img
+                src="{{ file_url(media.field_media_image.entity.uri.value) }}"
+                alt="{{ media.field_media_image.alt }}"
+              />
+
+            </div>
+            {% endif %} {% endif %}
+
+  {# Title #}
+  {% if paragraph.field_team_name.value %}
+    <h5 class="card__name">
+      {{ paragraph.field_team_name.value }}
+    </h5>
+  {% endif %}
+  
+  {# Description #}
+  {% if paragraph.field_team_job.value %}
+    <div class="card__job">
+      {{ paragraph.field_team_job.value}}
+    </div>
+  {% endif %}
+  
+</div>
