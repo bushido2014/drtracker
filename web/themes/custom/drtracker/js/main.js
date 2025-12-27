@@ -6,100 +6,55 @@
 (function (Drupal, once) {
   "use strict";
 
-  /*const swiper = new Swiper(".testimonial-slider", {
-    loop: true,
-    spaceBetween: 30,
-    breakpoints: {
-      768: {
-        slidesPerView: 1,
-      },
-      1024: {
-        slidesPerView: 2,
-      },
-    },
-  });*/
-
   Drupal.behaviors.drteacker = {
     attach: function (context, settings) {
-      // Restul comportamentului tău
-      if (!document.body.classList.contains("drteacker-loaded")) {
-        console.log("🎨 drteacker theme loaded successfully!");
-        document.body.classList.add("drteacker-loaded");
+      console.log("🎨 drteacker theme loaded!");
+      
+      // Scroll top button
+      let scrollTop = document.querySelector('.scroll-top');
+      if (scrollTop) {
+        scrollTop.addEventListener('click', (e) => {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
       }
 
+      // Accordion - DIRECT FĂRĂ DOMContentLoaded
+      const accordion = document.getElementById('faqAccordion');
+      if (accordion) {
+        const buttons = accordion.querySelectorAll('[data-accordion-toggle]');
+        buttons.forEach(button => {
+          button.addEventListener('click', function() {
+            const body = this.nextElementSibling;
+            const isActive = this.classList.contains('active');
 
-/**
-   * Scroll top button
-   */
-let scrollTop = document.querySelector('.scroll-top');
+            buttons.forEach(btn => {
+              btn.classList.remove('active');
+              btn.nextElementSibling.classList.remove('show');
+            });
 
-function toggleScrollTop() {
-  if (scrollTop) {
-    window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
-  }
-}
-scrollTop.addEventListener('click', (e) => {
-  e.preventDefault();
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
-});
-window.addEventListener('load', toggleScrollTop);
-document.addEventListener('scroll', toggleScrollTop);
-
-
-
-//      
-document.addEventListener('DOMContentLoaded', function() {
-  const toggleBtns = document.querySelectorAll('.toggle-btn');
-  const priceElements = document.querySelectorAll('.plan-price');
-
-  toggleBtns.forEach(btn => {
-    btn.addEventListener('click', function() {
-      const billingType = this.dataset.billing;
-
-      // Update active button
-      toggleBtns.forEach(b => b.classList.remove('active'));
-      this.classList.add('active');
-
-      // Update prices
-      priceElements.forEach(price => {
-        const newPrice = price.dataset[billingType];
-        price.textContent = newPrice;
-      });
-    });
-  });
-});
-
-
- document.addEventListener('DOMContentLoaded', function() {
-  const buttons = document.querySelectorAll('[data-accordion-toggle]');
-
-  buttons.forEach(button => {
-    button.addEventListener('click', function() {
-      const body = this.nextElementSibling;
-      const isActive = this.classList.contains('active');
-
-      // Close ALL buttons
-      buttons.forEach(btn => {
-        btn.classList.remove('active');
-        btn.nextElementSibling.classList.remove('show');
-      });
-
-      // Open clicked if not active
-      if (!isActive) {
-        this.classList.add('active');
-        body.classList.add('show');
+            if (!isActive) {
+              this.classList.add('active');
+              body.classList.add('show');
+            }
+          });
+        });
       }
-    });
-  });
-});
 
-
-      
-
-      
+      // Billing toggle
+      const toggleBtns = document.querySelectorAll('.toggle-btn');
+      const priceElements = document.querySelectorAll('.plan-price');
+      toggleBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+          const billingType = this.dataset.billing;
+          toggleBtns.forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+          priceElements.forEach(price => {
+            const newPrice = price.dataset[billingType];
+            price.textContent = newPrice;
+          });
+        });
+      });
     },
   };
 })(Drupal, once);
