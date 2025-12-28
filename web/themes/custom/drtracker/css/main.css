@@ -149,3 +149,7 @@ p {
 .cols-5 {
   grid-template-columns: repeat(5, 1fr);
 }
+
+.bg-gray {
+  background-color: var(--gray-color);
+}
