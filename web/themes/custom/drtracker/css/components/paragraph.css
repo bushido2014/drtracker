@@ -109,13 +109,8 @@ h2.heading-title::after.sm-line {
   padding-block: 20px;
 }
 
-.card {
-  background-color: var(--gray-color);
-  padding: 15px;
-  border-radius: var(--border-radius);
-}
 .card__image img{
-  width: 70px;
+  width: 80px;
 }
 
 .features-wrapp-top, .features-wrapp-bottom {
@@ -124,9 +119,11 @@ h2.heading-title::after.sm-line {
 .feature-image__right {
   margin-bottom: -15px;
 }
+
 .solution-wrapp {
   grid-template-columns: repeat(2, 1fr);
 }
+
 .wrapp-title {
   position:relative;
   padding-block: 20px;
