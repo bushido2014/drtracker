@@ -154,3 +154,8 @@ p {
 .bg-gray {
   background-color: var(--gray-color);
 }
+
+.card {
+  border-radius: var(--border-radius);
+  padding:20px;
+}
