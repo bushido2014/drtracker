@@ -228,10 +228,6 @@ h2.heading-title::after.sm-line {
   }
 }
 
-.key-feature-wrapper,.connection-wrapp,.story-wrapp {
-  grid-template-columns: repeat(2, 1fr);
-}
-
 .key-feature-content {
  padding: 80px 30px;
 }
@@ -258,9 +254,6 @@ h2.heading-title::after.sm-line {
   background-color: var(--gray-color);
 }
 
-.plans-wrapp {
-  grid-template-columns: repeat(3, 1fr);
-}
 .plans-wrapp {
   margin-block: 30px; 
 }
