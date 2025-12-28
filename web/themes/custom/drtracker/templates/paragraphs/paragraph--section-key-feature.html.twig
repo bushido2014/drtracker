@@ -17,7 +17,7 @@
     </div>
 
     {# === PRIMUL BLOC: Imagine stânga → Text dreapta === #}
-    <div class="key-feature-wrapper d-grid top-feature">
+    <div class="key-feature-wrapper d-grid top-feature cols-2">
       <div class="key-feature-image">
         {% if paragraph.field_image_key.entity %}
           {% set media = paragraph.field_image_key.entity %}
@@ -54,7 +54,7 @@
     </div>
 
     {# === AL DOILEA BLOC: Text stânga → Imagine dreapta === #}
-    <div class="key-feature-wrapper d-grid bottom-feature reverse">
+    <div class="key-feature-wrapper d-grid bottom-feature reverse cols-2">
       <div class="key-feature-content">
         {% if paragraph.field_title_key_bottom.value %}
           <h4>{{ paragraph.field_title_key_bottom.value }}</h4>
