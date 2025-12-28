@@ -112,7 +112,7 @@ h2.heading-title::after.sm-line {
 .card {
   background-color: var(--gray-color);
   padding: 15px;
-  border-radius: 0.375rem;
+  border-radius: var(--border-radius);
 }
 .card__image img{
   width: 70px;
@@ -279,7 +279,7 @@ h2.heading-title::after.sm-line {
 .plan-card {
  background-color: var(--white-color);
   border: 1px solid var(--gray-color-25);
-  border-radius: 12px;
+  border-radius: var(--border-radius);
   padding: 40px 30px;
  transition: all 0.3s ease;
 }
@@ -567,7 +567,7 @@ box-shadow: 0 8px 24px rgba(13, 110, 253, 0.1);
 
 .card-value {
    background-color: var(--white-color);  
-   border-radius: 16px;
+   border-radius: var(--border-radius);
    text-align: center;
    padding:20px;
    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -575,7 +575,7 @@ box-shadow: 0 8px 24px rgba(13, 110, 253, 0.1);
 
 .card-team {
    background-color: var(--gray-color);  
-   border-radius: 16px;
+   border-radius: var(--border-radius);
    text-align: center;
    padding:20px;
 }
