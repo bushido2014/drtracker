@@ -19,7 +19,7 @@
         });
       }
 
-      // Accordion - DIRECT FĂRĂ DOMContentLoaded
+  /*    // Accordion - DIRECT FĂRĂ DOMContentLoaded
       const accordion = document.getElementById('faqAccordion');
       if (accordion) {
         const buttons = accordion.querySelectorAll('[data-accordion-toggle]');
@@ -39,7 +39,7 @@
             }
           });
         });
-      }
+      }*/
 
       // Billing toggle
       const toggleBtns = document.querySelectorAll('.toggle-btn');
