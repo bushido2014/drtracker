@@ -500,6 +500,10 @@ box-shadow: 0 8px 24px rgba(13, 110, 253, 0.1);
    text-align: center;
 }
 
+.card-team .card-job {
+  color: var(--dark-slate-color);
+}
+
 .hero-feature-wrapp .content {
   padding-inline-end: 60px;
 }
