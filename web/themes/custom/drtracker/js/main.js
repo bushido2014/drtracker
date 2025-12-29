@@ -19,27 +19,7 @@
         });
       }
 
-  /*    // Accordion - DIRECT FĂRĂ DOMContentLoaded
-      const accordion = document.getElementById('faqAccordion');
-      if (accordion) {
-        const buttons = accordion.querySelectorAll('[data-accordion-toggle]');
-        buttons.forEach(button => {
-          button.addEventListener('click', function() {
-            const body = this.nextElementSibling;
-            const isActive = this.classList.contains('active');
-
-            buttons.forEach(btn => {
-              btn.classList.remove('active');
-              btn.nextElementSibling.classList.remove('show');
-            });
-
-            if (!isActive) {
-              this.classList.add('active');
-              body.classList.add('show');
-            }
-          });
-        });
-      }*/
+  
 
       // Billing toggle
       const toggleBtns = document.querySelectorAll('.toggle-btn');
