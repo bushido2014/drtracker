@@ -9,8 +9,10 @@ global:
       css/components/header.css: {}
       css/components/page.css: {}
       css/components/paragraph.css: {}
+      css/components/accordion.css: {}
       css/components/node.css: {}
       css/components/menu.css: {}
+      css/components/slider.css: {}
       css/components/footer.css: {}
   js:
     https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js: { type: external, minified: true }
