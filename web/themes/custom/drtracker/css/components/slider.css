@@ -69,3 +69,20 @@
 .client-stars .fa-star {
    color: var(--orange-w-color);
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: auto; /* Remove the default top positioning (usually 50%) */
+  bottom: 10px; /* Position the buttons 10px from the bottom */
+  /* Optional: Adjust left/right positioning as needed */
+}
+
+/* Optional: Adjust position for the next button specifically */
+.swiper-button-next {
+  right: 10px; /* Example: 10px from the right edge */
+}
+
+/* Optional: Adjust position for the previous button specifically */
+.swiper-button-prev {
+  left: 10px; /* Example: 10px from the left edge */
+}
