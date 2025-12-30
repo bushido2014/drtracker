@@ -1,1 +1,71 @@
 
+.swiper-container {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  height: auto;
+}
+
+.testimonial-slide {
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.client-card {
+  text-align: center;
+}
+
+.client-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.client-info {
+  padding: 15px;
+}
+
+.client-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.client-job {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+.client-text {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Navigation */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #0d6efd;
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Pagination */
+.swiper-pagination-bullet {
+  background: #0d6efd;
+}
