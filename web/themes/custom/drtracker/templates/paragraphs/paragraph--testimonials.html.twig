@@ -1,33 +1,66 @@
+{{ attach_library('drtracker/testimonials-slider') }}
+
 <section class="testimonials">
-<div class="container">
-
-<div class="section-title">
-    {{ content.field_before_title }}
-<div class=testimonials-title">
-    <h2 class="heading-title">{{paragraph.field_title.value}}</h2>
-</div>
-   <div class="description">
-      {{paragraph.field_testimonials_description.value}}
+  <div class="container">
+    <div class="section-title">
+      {{ content.field_before_title }}
+      <div class="testimonials-title">
+        <h2 class="heading-title">{{ paragraph.field_title.value }}</h2>
+      </div>
+      <div class="description">
+        {{ paragraph.field_testimonials_description.value }}
+      </div>
     </div>
-</div>
 
-
-{#{{content.field_testimonials_slider}}#}
-
-<div class="swiper-container testimonial-slider">
+    <div class="swiper-container testimonial-slider" id="testimonialSlider">
       <div class="swiper-wrapper">
+        {% for item in paragraph.field_testimonials_slider %}
+          {% set client = item.entity %}
+          {% if client %}
+            <div class="swiper-slide testimonial-slide">
+              {% if client.field_client_info %}
+                {% for card in client.field_client_info %}
+                  {% set card_entity = card.entity %}
+                  {% if card_entity %}
+                    <div class="client-card">
+                      {% if card_entity.field_image.entity %}
+                        {% set media = card_entity.field_image.entity %}
+                        {% if media.field_media_image.entity %}
+                          <img 
+                            src="{{ file_url(media.field_media_image.entity.uri.value) }}"
+                            alt="{{ media.field_media_image.alt }}"
+                          />
+                        {% endif %}
+                      {% endif %}
 
- {% for item in paragraph.field_testimonials_slider %}
-          {% set testimonial = item.entity %}
-          {% if testimonial %}
-<div class="swiper-slide testimonial-slide">
-{{content.field_client_info}}
-</div> {# închide .swiper-slide #}
- {% endif %}
-{% endfor %}
+                      <div class="client-info">
+                        {% if card_entity.field_client_name.value %}
+                          <h4 class="client-name">{{ card_entity.field_client_name.value }}</h4>
+                        {% endif %}
 
-</div>
-</div>
+                        {% if card_entity.field_client_job.value %}
+                          <p class="client-job">{{ card_entity.field_client_job.value }}</p>
+                        {% endif %}
 
-</div>
+                        {% if card_entity.field_client_text.value %}
+                          <p class="client-text">{{ card_entity.field_client_text.value | raw }}</p>
+                        {% endif %}
+                      </div>
+                    </div>
+                  {% endif %}
+                {% endfor %}
+              {% endif %}
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      <!-- Navigation -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
 </section>
