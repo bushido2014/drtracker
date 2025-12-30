@@ -7,11 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
       spaceBetween: 20,
       grid: {
         rows: 2,
-        fill: 'row',
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
       },
       navigation: {
         nextEl: '.swiper-button-next',
