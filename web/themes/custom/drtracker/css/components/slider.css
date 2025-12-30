@@ -62,8 +62,10 @@
   background: var(--primary-color);
 }
 
-.swiper-button-next,
- .swiper-button-prev svg{
-    
-        height: 50%;
-    }
+.client-stars {
+  margin-block: 15px;
+}
+
+.client-stars .fa-star {
+   color: var(--orange-w-color);
+}
