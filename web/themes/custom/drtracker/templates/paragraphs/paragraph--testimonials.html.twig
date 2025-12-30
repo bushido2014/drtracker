@@ -23,6 +23,8 @@
                   {% set card_entity = card.entity %}
                   {% if card_entity %}
                     <div class="card client-card bg-gray">
+                     <div class="card-head d-flex">
+                     <div class="client-avatar">
                       {% if card_entity.field_image.entity %}
                         {% set media = card_entity.field_image.entity %}
                         {% if media.field_media_image.entity %}
@@ -32,18 +34,28 @@
                           />
                         {% endif %}
                       {% endif %}
-
-                      <div class="client-info">
-                        {% if card_entity.field_client_name.value %}
+                      </div>
+                        <div class="client-info">
+                          {% if card_entity.field_client_name.value %}
                           <h4 class="client-name">{{ card_entity.field_client_name.value }}</h4>
                         {% endif %}
 
                         {% if card_entity.field_client_job.value %}
-                          <p class="client-job">{{ card_entity.field_client_job.value }}</p>
+                          <div class="client-job">{{ card_entity.field_client_job.value }}</div>
                         {% endif %}
+                        </div>
+
+
+                      </div>
+                      <div class="client-body">
+                        <div class="client-stars">
+                                {% for i in range(1, 6) %}
+                              <i class="fa-solid fa-star"></i>
+                                   {% endfor %}
+                        </div>
 
                         {% if card_entity.field_client_text.value %}
-                          <p class="client-text">{{ card_entity.field_client_text.value | raw }}</p>
+                          <div class="client-text">{{ card_entity.field_client_text.value }}</div>
                         {% endif %}
                       </div>
                     </div>
