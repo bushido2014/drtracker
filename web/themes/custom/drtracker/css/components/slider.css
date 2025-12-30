@@ -20,10 +20,14 @@
   
 }
 
-.client-card {
-  
+.card-head {
+  margin-block-end: 10px;
+  border-bottom: 1px solid var(--dark-slate-color);
 }
 
+.client-name {
+  font-size: 1.12rem;
+}
 
 .client-info {
   padding: 15px;
@@ -39,22 +43,27 @@
 
 .client-text {
   font-size: 14px;
-  color: #666;
   line-height: 1.6;
 }
 
 /* Navigation */
 .swiper-button-next,
 .swiper-button-prev {
-  color: #0d6efd;
+  color: var(--primary-color);
   width: 40px;
   height: 40px;
-  background: white;
+  background: var(--white-color);
   border-radius: 50%;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Pagination */
 .swiper-pagination-bullet {
-  background: #0d6efd;
+  background: var(--primary-color);
 }
+
+.swiper-button-next,
+ .swiper-button-prev svg{
+    
+        height: 50%;
+    }
