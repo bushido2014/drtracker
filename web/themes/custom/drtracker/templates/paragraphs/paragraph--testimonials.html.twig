@@ -12,10 +12,22 @@
 </div>
 
 
-{{content.field_testimonials_slider}}
+{#{{content.field_testimonials_slider}}#}
 
+<div class="swiper-container testimonial-slider">
+      <div class="swiper-wrapper">
 
+ {% for item in paragraph.field_testimonials_slider %}
+          {% set testimonial = item.entity %}
+          {% if testimonial %}
+<div class="swiper-slide testimonial-slide">
+{{content.field_client_info}}
+</div> {# închide .swiper-slide #}
+ {% endif %}
+{% endfor %}
 
+</div>
+</div>
 
 </div>
 </section>
