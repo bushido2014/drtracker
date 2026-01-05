@@ -1,0 +1,25 @@
+<section class="contact bg-gray">
+  <div class="container">
+  <div class="section-title">
+    <h2 class="heading-title">{{paragraph.field_title.value}}</h2>
+</div>
+
+<div class="contact-wrapp d-grid cols-2">
+   <div class="contact-item contact-form">
+     {{content.field_contact_form}}
+   </div>
+   <div class="contact-item contact-img">
+      {% if paragraph.field_image.entity %} {% set media =
+                paragraph.field_image.entity %} {% if
+                media.field_media_image.entity %}
+                <img
+                src="{{ file_url(media.field_media_image.entity.uri.value) }}"
+                alt="{{ media.field_media_image.alt }}"
+              />
+            {% endif %} {% endif %}
+   </div>
+</div>
+
+
+</div>
+</section>
