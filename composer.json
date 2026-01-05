@@ -25,7 +25,8 @@
         "drupal/pathauto": "^1.14",
         "drupal/paragraphs": "^1.19",
         "drupal/entity_usage": "^2.0@beta",
-        "drupal/fontawesome": "^3.0"
+        "drupal/fontawesome": "^3.0",
+        "drupal/webform": "^6.3@beta"
     },
     "require-dev": {
         "drupal/core-dev": "^11"
