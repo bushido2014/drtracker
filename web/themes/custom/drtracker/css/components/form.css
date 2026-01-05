@@ -38,3 +38,10 @@ textarea:focus {
   box-shadow: 0 0 5px #cacaca;
   transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
 }
+.contact-wrapp {
+ max-width: 920px;
+ margin: 20px auto;
+ background: var(--white-color);
+ padding: 30px;
+ border-radius: var(--border-radius);
+}
