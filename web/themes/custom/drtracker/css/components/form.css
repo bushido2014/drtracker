@@ -41,7 +41,7 @@ textarea:focus {
   transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
 }
 .contact-wrapp {
- max-width: 920px;
+ max-width: 980px;
  margin: 20px auto;
  background: var(--white-color);
  padding: 30px;
