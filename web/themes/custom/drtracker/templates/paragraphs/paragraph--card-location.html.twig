@@ -1,0 +1,36 @@
+{#
+/**
+ * @file
+ * Card paragraph template
+ */
+#}
+{% set classes = [
+  'card',
+  'card-location',
+  'bg-gray',
+] %}
+
+<div{{ attributes.addClass(classes) }}>
+  
+<div class="card-header d-flex">
+<span class="card-icon">
+<i class="fa-solid fa-location-dot"></i>
+</span>
+<h5 class="card-title">
+      {{ paragraph.field_title_location.value }}
+    </h5>
+</div>
+<div class="card-body">
+<div class="card-address">
+ {{ paragraph.field_adress_location.value }}
+</div>
+<div class="card-email">
+ {{ paragraph.field_email_location.value }}
+</div>
+<div class="card-phone">
+ {{ paragraph.field_phone_location.value }}
+</div>
+</div>  
+
+
+</div>
