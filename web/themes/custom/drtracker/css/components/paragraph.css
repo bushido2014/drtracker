@@ -508,4 +508,11 @@ box-shadow: 0 8px 24px rgba(13, 110, 253, 0.1);
   padding-inline-end: 60px;
 }
 
-
+.card-header {
+  align-items: stretch;
+  gap:10px;
+  justify-content: center;
+}
+.card-body {
+  padding-block-start: 15px;
+}
