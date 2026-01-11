@@ -538,17 +538,19 @@ box-shadow: 0 8px 24px rgba(13, 110, 253, 0.1);
   transform: scale(1.05);
 }
 
-/* Rând 2 - alt orden */
-.career-item:nth-child(4) {
-  grid-column: 1;
+career-item:nth-child(4) {
+  grid-column: 1 / 2;
+  width: 400px;
 }
 
 .career-item:nth-child(5) {
-  grid-column: 2;
+  grid-column: 2 / 3;
+  width: 500px;
 }
 
 .career-item:nth-child(6) {
-  grid-column: 3;
+  grid-column: 3 / 4;
+  width: 300px;
 }
 
 /* Responsive */
