@@ -561,8 +561,8 @@ box-shadow: 0 8px 24px rgba(13, 110, 253, 0.1);
 
 /* Rând 2 - reordoneaza */
 .career-item:nth-child(4) { grid-column: 1; }
-.career-item:nth-child(5) { grid-column: 3; }
-.career-item:nth-child(6) { grid-column: 2; }
+.career-item:nth-child(5) { grid-column: 2; }
+.career-item:nth-child(6) { grid-column: 3; }
 
 
 /* Responsive */
