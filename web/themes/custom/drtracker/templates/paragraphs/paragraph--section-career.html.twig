@@ -15,7 +15,7 @@
   {% endfor %}
 </div>
 
-  <div class="career-review d-flex">
+  <div class="career-review d-grid cols-4">
      <div class="review">
        <div class="rewiew-title">
           <span>{{paragraph.field_rewiew_title.value}}</span>
@@ -27,9 +27,9 @@
        </div>
         <p>{{paragraph.field_rewiew_text.value}}</p>
     </div>
-    <div class="counter d-grid cols-3">
+    
       {{ content.field_counter }}
-    </div>
+   
   </div>
 
   </div>
