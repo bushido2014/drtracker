@@ -589,6 +589,9 @@ box-shadow: 0 8px 24px rgba(13, 110, 253, 0.1);
 .review-star  .fa-star {
     color: var(--orange-s-color);
 }
+.counter {
+  text-align: center;
+}
 
 .counter-label {
   font-size: 3rem;
