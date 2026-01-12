@@ -581,3 +581,8 @@ box-shadow: 0 8px 24px rgba(13, 110, 253, 0.1);
     grid-template-columns: 1fr;
   }
 }
+
+
+.review-star  .fa-star {
+    color: var(--orange-s-color);
+}
