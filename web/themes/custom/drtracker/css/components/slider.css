@@ -50,11 +50,12 @@
 .swiper-button-next,
 .swiper-button-prev {
   color: var(--primary-color);
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   background: var(--white-color);
   border-radius: 50%;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 8px;
 }
 
 /* Pagination */
@@ -74,12 +75,12 @@
 
 /* Optional: Adjust position for the next button specifically */
 .swiper-button-next {
-  right: 42% !important;
+  right: 46% !important;
 }
 
 /* Optional: Adjust position for the previous button specifically */
 .swiper-button-prev {
-  left: 42% !important;
+  left: 46% !important;
 }
 .bottom-pos {
     bottom: -40px !important;
