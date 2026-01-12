@@ -1,0 +1,25 @@
+<section class="career-work">
+<div class="container">
+
+ <div class="section-title">
+<div class="career-work-title">
+    <h2 class="heading-title">{{paragraph.field_title.value}}</h2>
+</div>
+   <div class="description">
+      <p>{{paragraph.field_description.value}}</p>
+    </div>
+</div>
+
+
+
+     <div class="work-images d-grid">
+  {% for media in paragraph.field_images_work %}
+    {% set file = media.entity.field_media_image.entity %}
+    <div class="work-images-item" data-index="{{ loop.index }}" style="background-image: url({{ file_url(file.uri.value) }})"></div>
+  {% endfor %}
+</div>
+
+
+
+</div>
+</section>
