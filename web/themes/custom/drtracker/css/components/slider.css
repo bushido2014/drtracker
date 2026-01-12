@@ -74,15 +74,14 @@
 
 /* Optional: Adjust position for the next button specifically */
 .swiper-button-next {
-  right: 10px; /* Example: 10px from the right edge */
+  right: 42% !important;
 }
 
 /* Optional: Adjust position for the previous button specifically */
 .swiper-button-prev {
-  left: 10px; /* Example: 10px from the left edge */
+  left: 42% !important;
 }
 .bottom-pos {
-    bottom: 10px;
-    top: auto;
-    /* Center them horizontally in a flexible container or with specific left/right margins */
+    bottom: -40px !important;
+    top: auto !important;
 }
