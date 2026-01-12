@@ -16,9 +16,6 @@
   height: auto;
 }
 
-.testimonial-slide {
-  
-}
 
 .card-head {
   margin-block-end: 10px;
@@ -83,6 +80,6 @@
   left: 45% !important;
 }
 .bottom-pos {
-    bottom: -40px !important;
+    bottom: -50px !important;
     top: auto !important;
 }
