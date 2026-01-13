@@ -38,11 +38,12 @@
             </div>
 
             <div class="card-btn d-flex">
-              {% if job.field_job_cta_link.uri %}
-                <a href="{{ job.field_job_cta_link.0.url.toString() }}" class="btn btn-primary">
-                  {{ job.field_job_cta_link.title }} →
+             
+              <a  href="{{ path('entity.node.canonical', {'node': job.id}) }}" class="btn btn-outline d-flex">
+                  <span>{{ job.field_job_cta_link.title }}</span>
+                  <span><i class="fa-solid fa-arrow-right"></i></span>
                 </a>
-              {% endif %}
+             
             </div>
           </div>
          
