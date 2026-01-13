@@ -8,7 +8,7 @@
 .jobs-text {
   padding: 15px 0;
 }
-.jobs-text ul {
+.job-page ul {
     list-style: disc;
     margin-inline-start: 15px;
 }
@@ -28,13 +28,7 @@
 }
 .job-details-list li {
   padding: 12px 0;
-  padding-left: 25px;
   position: relative;
 }
 
-.job-details-list li:before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  font-size: 20px;
-}
+
