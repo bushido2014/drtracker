@@ -1,0 +1,52 @@
+<section class="career-job">
+  <div class="container">
+
+<div class="career-heading">
+ <h2 class="heading-title">{{paragraph.field_title.value}}</h2>
+</div>
+
+
+
+    <div class="job-cards">
+      {% for item in paragraph.field_open_jobs %}
+        {% set job = item.entity.field_job_reference.entity %}
+        {% if job %}
+          <div class="card-job d-flex">
+            <div class="card-title">
+              {% if job.field_job_time.value %}
+                <span class="job-time">{{ job.field_job_time.value }}</span>
+              {% endif %}
+              <h3>{{ job.title.value }}</h3>
+              {% if job.field_job_vacancy.value %}
+                <span class="job-vacancy">{{ job.field_job_vacancy.value }}</span>
+              {% endif %}
+            </div>
+
+            <div class="card-content">
+              {% if job.field_job_salary.value %}
+                <p><strong>Salary:</strong> {{ job.field_job_salary.value }}</p>
+              {% endif %}
+              {% if job.field_job_experience.value %}
+                <p><strong>Experience:</strong> {{ job.field_job_experience.value }}</p>
+              {% endif %}
+              {% if job.field_job_education.value %}
+                <p><strong>Education:</strong> {{ job.field_job_education.value }}</p>
+              {% endif %}
+            </div>
+
+            <div class="card-btn">
+              {% if job.field_job_cta_link.uri %}
+                <a href="{{ job.field_job_cta_link.uri }}" class="btn btn-primary">
+                  {{ job.field_job_cta_link.title }} →
+                </a>
+              {% endif %}
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+ 
+
+
+ </div>
+</section>
