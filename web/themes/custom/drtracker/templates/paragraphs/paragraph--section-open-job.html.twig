@@ -12,7 +12,7 @@
         {% set job = item.entity %}
         {% if job %}
         
-          <div class="card-job d-flex">
+          <div class="card-job d-grid cols-3">
             <div class="card-title">
               {% if job.field_job_time.value %}
                 <span class="job-time">{{ job.field_job_time.value }}</span>
@@ -24,15 +24,17 @@
             </div>
 
             <div class="card-content">
+              <ul class="card-list">
               {% if job.field_job_salary.value %}
-                <p><strong>Salary:</strong> {{ job.field_job_salary.value }}</p>
+                <li><strong>Salary:</strong> {{ job.field_job_salary.value }}</li>
               {% endif %}
               {% if job.field_job_experience.value %}
-                <p><strong>Experience:</strong> {{ job.field_job_experience.value }}</p>
+                <li><strong>Experience:</strong> {{ job.field_job_experience.value }}</li>
               {% endif %}
               {% if job.field_job_education.value %}
-                <p><strong>Education:</strong> {{ job.field_job_education.value }}</p>
+                <li><strong>Education:</strong> {{ job.field_job_education.value }}</li>
               {% endif %}
+             </ul>
             </div>
 
             <div class="card-btn">
