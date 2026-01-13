@@ -2,6 +2,11 @@
   padding: 40px 0;
 }
 
+.job-page .description {
+  padding-top: 30px;
+  maax-width: 500px;
+}
+
 .job-wrapp {
    grid-template-columns: 65% 35%;
 }
