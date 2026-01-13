@@ -49,7 +49,7 @@
       </ul>
 
       {% if node.field_job_cta_link.uri %}
-        <a href="{{ node.field_job_cta_link.uri }}" class="btn btn-outline d-flex">
+        <a href="{{ node.field_job_cta_link.0.url.toString() }}" class="btn btn-outline d-flex">
          <span> {{ node.field_job_cta_link.title }} </span>
           <span><i class="fa-solid fa-arrow-right"></i></span>
         </a>
