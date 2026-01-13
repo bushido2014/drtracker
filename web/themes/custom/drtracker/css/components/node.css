@@ -5,6 +5,7 @@
 .job-header .description {
   padding-top: 30px;
   max-width: 500px;
+  margin: auto;
 }
 
 .job-wrapp {
