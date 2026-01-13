@@ -1,9 +1,19 @@
 
 <section class="job-header bg-gray">
 <div class="container">
-    <div class="job-header">
-      <h2>{{ node.title.value }}</h2>
-    </div>
+  <div class="job-header">
+
+
+          <div class="section-title">
+              <h2 class="heading-title"><span>Apply</span> {{ node.title.value }}</h2>
+            <div class="description">
+                    <p>Creating a concise and effective design studio 
+                   brief is crucial for outlining your business, its services.</p>
+            </div>
+          </div>
+   
+
+   </div>
 </div>
 </section>
 <article{{ attributes.addClass('job-page') }}>
@@ -39,8 +49,9 @@
       </ul>
 
       {% if node.field_job_cta_link.uri %}
-        <a href="{{ node.field_job_cta_link.uri }}" class="job-cta-button">
-          {{ node.field_job_cta_link.title }} →
+        <a href="{{ node.field_job_cta_link.uri }}" class="btn btn-outline d-flex">
+         <span> {{ node.field_job_cta_link.title }} </span>
+          <span><i class="fa-solid fa-arrow-right"></i></span>
         </a>
       {% endif %}
 
