@@ -1,0 +1,6 @@
+.job-wrapp {
+   grid-template-columns: 65% 35%;
+}
+.job-label {
+  font-size: 1.7rem;
+}
