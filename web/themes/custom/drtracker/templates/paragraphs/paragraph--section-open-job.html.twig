@@ -9,7 +9,7 @@
 
     <div class="job-cards">
       {% for item in paragraph.field_open_jobs %}
-        {% set job = item.entity.field_job_reference.entity %}
+        {% set job = item.entity %}
         {% if job %}
           <div class="card-job d-flex">
             <div class="card-title">
