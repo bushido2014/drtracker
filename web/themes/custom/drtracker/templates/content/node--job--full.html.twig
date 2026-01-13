@@ -19,6 +19,31 @@
 <div class="job-sidebar">
  <div class="job-details-box">
 <h5>Job Details</h5>
+
+ <ul class="job-details-list">
+        {% if node.field_job_salary.value %}
+          <li><strong>Salary:</strong> {{ node.field_job_salary.value }}</li>
+        {% endif %}
+        {% if node.field_job_vacancy.value %}
+          <li><strong>Vacancy:</strong> {{ node.field_job_vacancy.value }}</li>
+        {% endif %}
+        {% if node.field_job_experience.value %}
+          <li><strong>Experiences:</strong> {{ node.field_job_experience.value }}</li>
+        {% endif %}
+        {% if node.field_job_education.value %}
+          <li><strong>Education:</strong> {{ node.field_job_education.value }}</li>
+        {% endif %}
+        {% if node.field_job_deadline.value %}
+          <li><strong>Deadline:</strong> {{ node.field_job_deadline.value }}</li>
+        {% endif %}
+      </ul>
+
+      {% if node.field_job_cta_link.uri %}
+        <a href="{{ node.field_job_cta_link.uri }}" class="job-cta-button">
+          {{ node.field_job_cta_link.title }} →
+        </a>
+      {% endif %}
+
 </div>
 <div>
 </div>
