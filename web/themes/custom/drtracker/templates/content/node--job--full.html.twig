@@ -1,3 +1,19 @@
+
+<section class="job-header bg-gray">
 <div class="container">
-{{content}}
-</div>
+    <div class="job-header">
+      <h2>{{ node.title.value }}</h2>
+    </div>
+</section>
+<article{{ attributes.addClass('job-page') }}>
+  
+
+    <div class="job-content">
+      {{ content.field_job_description }}
+      {{ content.field_job_responsibilities }}
+      {{ content.field_qualifications }}
+      {{ content.field_skills }}
+      {{ content.field_other_benefits }}
+    </div>
+  </div>
+</article>
