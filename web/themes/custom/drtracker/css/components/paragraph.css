@@ -593,6 +593,7 @@ margin: 15px auto;
   padding: 25px;
   background-color: var(--white-color);
   border-radius: var(--border-radius);
+  margin-block: 25px;
 }
 
 .job-card h4 {
