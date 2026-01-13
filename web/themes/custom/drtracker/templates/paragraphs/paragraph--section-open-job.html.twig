@@ -7,11 +7,11 @@
 
 
 
-    <div class="job-wpapper">
+    <div class="job-cards d-flex">
       {% for item in paragraph.field_open_jobs %}
         {% set job = item.entity %}
         {% if job %}
-          <div class="job-card d-flex">
+        
           <div class="card-job">
             <div class="card-title">
               {% if job.field_job_time.value %}
@@ -43,7 +43,7 @@
               {% endif %}
             </div>
           </div>
-          </div>
+         
         {% endif %}
       {% endfor %}
     </div>
