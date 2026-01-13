@@ -5,6 +5,14 @@
 .job-wrapp {
    grid-template-columns: 65% 35%;
 }
+.jobs-text {
+  padding: 15px 0;
+}
+.jobs-text ul {
+    list-style: disc;
+    margin-inline-start: 15px;
+}
+
 .job-label {
   font-size: 1.7rem;
 }
