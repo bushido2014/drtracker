@@ -2,9 +2,9 @@
   padding: 40px 0;
 }
 
-.job-page .description {
+.job-page .section-title .description {
   padding-top: 30px;
-  maax-width: 500px;
+  max-width: 500px;
 }
 
 .job-wrapp {
