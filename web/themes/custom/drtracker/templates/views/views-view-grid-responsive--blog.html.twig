@@ -50,9 +50,28 @@
     <div class="views-view-responsive-grid__item">
       <div class="views-view-responsive-grid__item-inner">
         {#{{- item.content -}}#}
-        {{content.image}}
-        {{content.title}}
-        {{content.link}}
+        <div class="blog-card">
+
+  {% if fields.field_image is defined %}
+    <div class="blog-card-image">
+      {{ fields.field_image.content }}
+    </div>
+  {% endif %}
+
+  {% if fields.title is defined %}
+    <h3 class="blog-card-title">
+      {{ fields.title.content }}
+    </h3>
+  {% endif %}
+
+  {% if fields.view_node is defined %}
+    <div class="blog-card-link">
+      {{ fields.view_node.content }}
+    </div>
+  {% endif %}
+
+</div>
+
       </div>
     </div>
   {% endfor %}
