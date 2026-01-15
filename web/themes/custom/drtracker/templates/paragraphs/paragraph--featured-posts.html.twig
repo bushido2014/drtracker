@@ -15,7 +15,40 @@
 
 
 <div class="feature-wrapp">
-{{content.field_featured_article}}
+{#   {{content.field_featured_article}} #}
+
+
+
+
+
+{% for item in paragraph.field_featured_article %}
+ {% if item.entity %}
+{% set article = item.entity %}
+      
+  {% if article.field_image_cases.entity %}
+                  {% set media = article.field_image.entity %}
+                  {% if media.field_media_image.entity %}
+                    <div class="feature-card__image">
+                      <img
+                        src="{{ file_url(media.field_media_image.entity.uri.value) }}"
+                        alt="{{ media.field_media_image.alt }}"
+                        loading="lazy"
+                      />
+                    </div>
+                  {% endif %}
+                {% endif %}
+        <h4 class="feature-card__title">{{ article.label }}</h4>
+
+
+
+     {% endif %}
+  {% endfor %}
+
+
+
+
+
+
 </div>
 
 
