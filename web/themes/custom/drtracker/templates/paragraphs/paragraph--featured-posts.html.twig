@@ -30,11 +30,15 @@
 
 
 
-           {% if article.field_image is not empty %}
-            <div class="news-image">
-               <img src="{{ article.field_image|file_url }}" alt="{{ article.field_image.alt }}">
-            </div>
-            {% endif %}
+           {% if article.field_image.entity %}
+        <div class="feature-card__image">
+          <img
+            src="{{ file_url(article.field_image.entity.uri.value) }}"
+            alt="{{ article.field_image.alt }}"
+            loading="lazy"
+          />
+        </div>
+      {% endif %}
 
 
       <h5 class="feature-card__title">{{ article.label }}</h5>
