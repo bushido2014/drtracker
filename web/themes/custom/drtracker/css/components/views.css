@@ -20,3 +20,11 @@
 .blog-views-link {
     float: right;
 }
+
+.tags-wrapp {
+   padding-block: 30px;
+}
+
+.tags-wrapp a {
+   margin-inline: 20px;
+}
