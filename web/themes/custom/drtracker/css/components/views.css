@@ -1,0 +1,13 @@
+.views-view-responsive-grid__item-inner {
+   padding: 20px;
+   background-color: var(--gray-color);
+   border-radius: var(--border-radius);
+}
+
+.views-field views-field-field-image img{
+  border-radius: 12px;
+}
+
+.blog-views-link {
+    float: right;
+}
