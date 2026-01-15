@@ -4,7 +4,7 @@
    border-radius: var(--border-radius);
 }
 
-.views-field views-field-field-image img{
+.views-field-field-image img{
   border-radius: 12px;
 }
 
