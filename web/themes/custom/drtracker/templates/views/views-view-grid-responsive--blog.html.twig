@@ -49,7 +49,10 @@
   {% for item in items %}
     <div class="views-view-responsive-grid__item">
       <div class="views-view-responsive-grid__item-inner">
-        {{- item.content -}}
+        {#{{- item.content -}}#}
+        {{content.image}}
+        {{content.title}}
+        {{content.link}}
       </div>
     </div>
   {% endfor %}
