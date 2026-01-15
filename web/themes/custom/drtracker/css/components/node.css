@@ -40,4 +40,9 @@ job-details-list ul {
   position: relative;
 }
 
-
+.article-body {
+  padding-block: 25px;
+}
+.article-img {
+  padding-top: 30px;
+}
