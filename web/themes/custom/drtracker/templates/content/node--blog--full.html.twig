@@ -1,14 +1,14 @@
 <article{{ attributes.addClass('blog-node') }}>
 <section class="article-heading bg-gray">
      <div class="container">
-        <h2 class="heading-title">{{ node.title.value }}</h2>
+        <h2 class="blog-title">{{ node.title.value }}</h2>
           <div class="article-img">
            {{content.field_image}}
         </div>
      </div>
 </section>
 <div class="container">
-{{content.field_body.value}}
+{{ content.body }}
 </div>
 
 </article>
