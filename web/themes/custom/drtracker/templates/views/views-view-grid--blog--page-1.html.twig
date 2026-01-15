@@ -1,0 +1,23 @@
+{%
+  set classes = [
+    'views-view-grid',
+    'views-view-grid--' ~ options.alignment,
+  ]
+%}
+<div class="container">
+{% if title %}
+  <h3>{{ title }}</h3>
+{% endif %}
+<div{{ attributes.addClass(classes).setAttribute('style', '--views-grid--column-count: ' ~ options.columns) }}>
+  {% for row in items %}
+    {% for item in row.content %}
+      <div class="views-view-grid__item">
+        <div class="views-view-grid__item-inner">
+          {{- item.content -}}
+        </div>
+      </div>
+    {% endfor %}
+  {% endfor %}
+</div>
+
+</div>
