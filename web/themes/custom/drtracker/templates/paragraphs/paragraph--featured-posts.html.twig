@@ -26,7 +26,7 @@
     {% set article = item.entity %}
 
   
-       <a href="{{ path('entity.node.canonical', {'node': blog.id}) }}" class="feature-card">
+       <a href="{{ path('entity.node.canonical', {'node': article.id()}) }}" class="feature-card">
       {% if article.field_image.entity %}
         <div class="feature-card__image">
           <img
