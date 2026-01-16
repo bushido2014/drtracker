@@ -18,7 +18,7 @@
 <div class="int-btn">
  {% if node.field_integration_link.uri %}
         <a href="{{ node.field_integration_link.0.url.toString() }}" class="btn btn-primary">
-         {{ node.field_job_cta_link.title }} 
+         {{ node.field_integration_link.title }} 
         </a>
       {% endif %}
 </div>
@@ -28,7 +28,7 @@
 </div>
 </div>
 <div class="integration-body">
-{{content.field_body.value}}
+{{content.field_body}}
 </div>
 </div>
 </section>
