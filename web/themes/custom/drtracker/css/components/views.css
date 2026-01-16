@@ -99,6 +99,10 @@
    font-size: x-large;
 }
 
+.views-posts {
+   margin: 40px auto 10px;
+}
+
 @media (max-width: 768px) {
   .featured-posts {
     grid-template-columns: 1fr;
