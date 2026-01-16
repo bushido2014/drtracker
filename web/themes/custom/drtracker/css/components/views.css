@@ -65,11 +65,15 @@
   display: flex;
   flex-direction: column;
   height: 100%;
+}
+
+.inner-card {
   border-radius: var(--border-radius);
   overflow: hidden;
   background-color: var(--white-color);
   padding: 20px;
 }
+
 .feature-card__body {
    padding-block-start: 15px;
 }
