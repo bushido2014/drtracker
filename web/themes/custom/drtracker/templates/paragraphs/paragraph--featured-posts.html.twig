@@ -27,24 +27,26 @@
   
     <a href="{{ path('entity.node.canonical', {'node': article.id()}) }}" class="feature-card">
 
-      {% if article.field_image.0 %}
+{% if article.field_image.0 %}
   <div class="feature-card__image">
     <img
       src="{{ file_url(article.field_image.0.entity.uri.value) }}"
-      alt="{{ article.field_image.0.alt }}"
-      loading="lazy"
-    />
+      alt="{{ article.field_image.0.alt }}" loading="lazy" />
   </div>
 {% endif %}
       <div class="feature-card__body">
-      <h5 class="feature-card__title">{{ article.label }}</h5>
-      <div class="feature-card__text">
-        {{ article.body.value|slice(0, 180)|raw }}
+          <div class=feature-card__heading d-flex">
+            <h5 class="feature-card__title">{{ article.label }}</h5>
+              <div class="feature-link__icon">
+                <i class="fa-solid fa-up-right-from-square"></i>
+              </div>
+          </div>
+      
+           <div class="feature-card__text">
+              {{ article.body.value|slice(0, 178)|raw }}
+            </div>
       </div>
-      <div class="feature-link__icon">
-        <i class="fa-solid fa-up-right-from-square"></i>
-      </div>
-</div>
+
     </a>
   {% endif %}
 {% endfor %}
