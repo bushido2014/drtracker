@@ -1,0 +1,29 @@
+<article{{ attributes.addClass('integration-node') }}>
+<section class="integration-header bg-gray">
+<div class="container">
+<div class="integration-wrapp d-grid-cols-2">
+<div class="integration-item">
+     <div class="heading d-flex">
+        <div class="heading-logo">
+          {{content.field_logo_img}}
+        </div>
+         <div class="heading-title">
+         <h3>{{ node.title.value }}</h3>
+          {{content.field_sub_title}}
+        </div>
+     </div>
+<div class="heading-text">
+{{content.field_integration_text}}
+ </div>
+</div>
+<div class="integration-item">
+{{content.field_image}}
+</div>
+</div>
+<div class="integration-body">
+{{content.field_body.value}}
+</div>
+</div>
+</section>
+
+</article>
