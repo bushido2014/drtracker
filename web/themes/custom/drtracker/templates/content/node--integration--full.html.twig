@@ -1,13 +1,13 @@
 <article{{ attributes.addClass('integration-node') }}>
 <section class="integration-header bg-gray">
 <div class="container">
-<div class="integration-wrapp d-grid-cols-2">
+<div class="integration-wrapp d-grid cols-2">
 <div class="integration-item">
      <div class="heading d-flex">
         <div class="heading-logo">
           {{content.field_logo_img}}
         </div>
-         <div class="heading-title">
+         <div class="integration-title">
          <h3>{{ node.title.value }}</h3>
           {{content.field_sub_title}}
         </div>
@@ -15,6 +15,13 @@
 <div class="heading-text">
 {{content.field_integration_text}}
  </div>
+<div class="int-btn">
+ {% if node.field_integration_link.uri %}
+        <a href="{{ node.field_integration_link.0.url.toString() }}" class="btn btn-primary">
+         {{ node.field_job_cta_link.title }} 
+        </a>
+      {% endif %}
+</div>
 </div>
 <div class="integration-item">
 {{content.field_image}}
