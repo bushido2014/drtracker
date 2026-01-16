@@ -43,6 +43,7 @@
 
 .featured-posts .feature-card:nth-child(1) .feature-card__title {
    font-size: 2rem;
+   margin-bottom: .85rem;
 }
 
 /* card mic sus */
@@ -93,6 +94,11 @@
   object-fit: cover;
   border-radius:12px; 
 }
+
+.fa-up-right-from-square {
+   font-size: x-large;
+}
+
 @media (max-width: 768px) {
   .featured-posts {
     grid-template-columns: 1fr;
