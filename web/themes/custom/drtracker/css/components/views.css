@@ -114,3 +114,7 @@
     grid-row: auto;
   }
 }
+.js-pager__items {
+   justify-content: center;
+    gap: 10px;
+}
