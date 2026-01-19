@@ -24,7 +24,7 @@
 @media (max-width: 980px) {
 	
 #block-drtracker-headerbuton,
-nav#block-drtracker-main-menu .main-menu {
+nav .main-menu {
 display: none;
 }
 	
