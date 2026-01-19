@@ -52,3 +52,6 @@ job-details-list ul {
 .integration-body {
   padding: 40px 0;
 }
+section.heading {
+  margin-block-end: 35px;
+}
