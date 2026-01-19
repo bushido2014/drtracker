@@ -27,20 +27,31 @@
   {# Header #}
   
     <header role="banner" class="site-header">
-    <div class="container d-flex">
+  <div class="container d-flex">
+    {% if page.header_left %}
       <div class="header-left">
-      {{ page.header_left }}
-    </div>
-
-    <div class="header-center">
-      {{ page.header_center }}
-    </div>
-
-    <div class="header-right">
-      {{ page.header_right }}
-    </div> 
-    </div>
-    </header>
+        {{ page.header_left }}
+      </div>
+    {% endif %}
+    
+    {% if page.header_center %}
+      <div class="header-center">
+        {{ page.header_center }}
+      </div>
+    {% endif %}
+    
+    {% if page.header_right %}
+      <div class="header-right">
+        {{ page.header_right }}
+      </div>
+    {% endif %}
+   <div class="hamburger">
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+				</div>
+  </div>
+</header>
  
 
   {# Content Top #}
