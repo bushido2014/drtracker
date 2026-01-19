@@ -67,7 +67,7 @@ display: none;
 	top: 90%;
 	left: 0;
 	right: 0;
-	display: flex;
+	display: flex !important;
 	flex-direction: column;
 	width: 100%;
 	color: #fff;
