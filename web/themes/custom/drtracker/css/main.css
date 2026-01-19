@@ -162,3 +162,8 @@ p {
   border-radius: var(--border-radius);
   padding:20px;
 }
+
+.hamburger {
+	display: none;
+	cursor: pointer;
+}
