@@ -24,9 +24,10 @@
 @media (max-width: 980px) {
 	
 #block-drtracker-headerbuton,
-nav ul {
-		display: none;
-	}
+nav#block-drtracker-main-menu {
+display: none;
+}
+	
 .hamburger {
 	display: block;
 }
