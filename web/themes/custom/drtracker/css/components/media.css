@@ -34,6 +34,81 @@
   .career-images {
     grid-template-columns: 1fr;
   }
+
+nav ul {
+		display: none;
+	}
+.hamburger {
+	display: block;
+
+}
+
+ .hamburger .line {
+   
+   	width: 40px;
+   	height: 4px;
+   	display: block;
+   	background-color: #fff;
+    margin: 6px auto;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    
+
+ }
+.hamburger.is-active .line:nth-child(2){
+  opacity: 0;
+}
+
+.hamburger.is-active .line:nth-child(1){
+  transform: translateY(10px) rotate(45deg);
+
+}
+
+ .hamburger.is-active .line:nth-child(3){
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+
+
+ }
+
+ nav .site-nav-open {
+	position: absolute;
+	top: 90%;
+	left: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	color: #fff;
+	background: #374256;
+	transition: all 0.3s ease;
+	z-index: 1;
+}
+
+
+nav .site-nav-open li {
+	
+	}
+
+nav .site-nav-open li a{
+	display: block;
+	text-align: center;
+	cursor: pointer;
+	transition: all .3s ease;
+	padding: 10px;
+	text-decoration: none;
+
+}
+
+ nav .site-nav-open li a:hover {
+ 	background-color: #4b4f56;
+ 	color: #f6f6f6;
+ }
+
+
+  
   
 }
 
