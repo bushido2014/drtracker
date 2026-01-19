@@ -1,0 +1,26 @@
+<section class="heading bg-gray">
+  <div class="container">
+<div class="section-title">
+   {% if paragraph.field_heading_title.value %}
+    <h2 class="heading-title sm-line">{{paragraph.field_heading_title.value}}</h2>
+   {% endif %}
+
+   {% if paragraph.field_heading_time.value %}
+    <div class="heading-time">
+      <span>{{paragraph.field_heading_time.value}}</span>
+    </div>
+   {% endif %}
+
+   {% if paragraph.field_heading_description.value %}
+   <div class="description">
+      {{paragraph.field_heading_description.value| raw}}
+    </div>
+     {% endif %}
+
+</div>
+
+
+
+
+</div>
+</section>
