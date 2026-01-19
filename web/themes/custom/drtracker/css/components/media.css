@@ -15,10 +15,14 @@
     grid-template-columns: repeat(2, 1fr);
     grid-auto-columns: auto;
   }
+.partners-logos {
+    grid-template-columns: repeat(3, 1fr);
+}
   
 }
 
 @media (max-width: 980px) {
+	
 #block-drtracker-headerbuton,
 nav ul {
 		display: none;
@@ -55,7 +59,7 @@ nav ul {
 
 
 
- }
+ 
 
  nav .site-nav-open {
 	position: absolute;
@@ -114,7 +118,9 @@ nav .site-nav-open li a{
     grid-template-columns: 1fr;
   }
 
-
+.partners-logos {
+    grid-template-columns: repeat(1, 1fr);
+}
   
 }
 
