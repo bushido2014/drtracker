@@ -8,6 +8,17 @@
   Drupal.behaviors.drtracker = {
     attach: function (context, settings) {
       console.log("🎨 drtracker theme loaded!");
+
+
+  const hamburger = document.querySelector('.hamburger');
+  const navUl = document.querySelector('nav .main-menu');
+
+  hamburger.addEventListener('click', function() {
+    hamburger.classList.toggle('is-active');
+    navUl.classList.toggle('site-nav-open');
+  });
+
+
       
       // Scroll top button
       let scrollTop = document.querySelector('.scroll-top');
