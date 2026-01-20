@@ -57,9 +57,11 @@ h1.heading-title::after {
 }
 
 .solution-item__content .wrapp-title .heading-title::after {
-  width: 430px;
+  right: 130px;
 }
-
+.faq-content .heading-title::after {
+  right: 340px;
+}
 
 .hero-btns-wrapp {
   padding:25px 0;
