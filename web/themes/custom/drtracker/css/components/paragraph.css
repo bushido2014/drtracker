@@ -62,6 +62,10 @@ h1.heading-title::after {
 .faq-content .heading-title::after {
   right: 340px;
 }
+.connection-content .heading-title::after {
+  right: 220px;
+}
+
 
 .hero-btns-wrapp {
   padding:25px 0;
