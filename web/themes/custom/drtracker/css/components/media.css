@@ -197,6 +197,14 @@ nav .site-nav-open li a{
 }
 .hero-btns-wrapp {
     flex-direction: column;
+}
+
+.swiper-button-next {
+  right: 35% !important;
+}
+	
+.swiper-button-prev {
+  left: 35% !important;
 }	
   
 }
