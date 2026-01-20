@@ -1,4 +1,4 @@
-.views-view-grid {
+.views-view-responsive-grid {
     display:grid;
     gap:30px;
     grid-template-columns: repeat(3, 1fr);
