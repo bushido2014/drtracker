@@ -34,17 +34,12 @@
   ]
 %}
 
-{% set responsive_grid_styles = [
-    '--views-responsive-grid--column-count:' ~ options.columns ~ ';',
-    '--views-responsive-grid--cell-min-width:' ~ options.cell_min_width ~ 'px;',
-    '--views-responsive-grid--layout-gap:' ~ options.grid_gutter ~ 'px;',
-  ]
-%}
+
 <div class="container">
 {% if title %}
   <h3>{{ title }}</h3>
 {% endif %}
-<div{{ attributes.addClass(classes).setAttribute('style', responsive_grid_styles|join()) }}>
+<div{{ attributes.addClass(classes) }}>
   {% for item in items %}
     <div class="views-view-responsive-grid__item">
       <div class="views-view-responsive-grid__item-inner">
