@@ -28,6 +28,10 @@ h2 {
 
 .features-wrapp-top {
     grid-template-columns: 2fr 2fr;
+}
+
+.solution-wrapp {
+    grid-template-columns: repeat(1, 1fr);
 }	
 	
 }
