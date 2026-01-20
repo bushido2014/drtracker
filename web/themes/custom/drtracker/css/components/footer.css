@@ -4,9 +4,6 @@ footer {
   padding: 40px 0;
 }
 
-.footer-wrapp {
-  grid-template-columns: repeat(4, 1fr);
-}
 .social-links {
   gap:10px;
 }
