@@ -66,13 +66,17 @@ h2 {
 @media (max-width: 980px) {
 	.career-item:nth-child(1)
  {
-
-    width: initial;
+   width: initial;
 }
-	.work-images-item {
+	.work-images-item,.featured-posts .feature-card {
 		grid-column: initial !important; 
 		grid-row: initial !important;
 	}
+	
+.featured-posts	{
+	grid-template-columns: 1fr;
+    grid-template-rows: initial;
+}
 
  h1 {
     font-size: 2.8rem;
