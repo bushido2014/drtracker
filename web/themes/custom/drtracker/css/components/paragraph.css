@@ -34,7 +34,7 @@
   z-index: 1;
 }
 h1.heading-title::after {
-  right: 0;
+  right: 70px;
   width: 460px;
 }
 /*h2.heading-title::after {
