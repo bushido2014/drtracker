@@ -50,6 +50,14 @@ h2 {
     grid-template-columns: repeat(2, 1fr);
 }	
 	
+.swiper-button-next {
+  right: 40% !important;
+}
+	
+.swiper-button-prev {
+  left: 40% !important;
+}
+
 	
 }
 
