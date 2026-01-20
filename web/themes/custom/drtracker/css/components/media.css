@@ -206,6 +206,26 @@ nav .site-nav-open li a{
 .swiper-button-prev {
   left: 35% !important;
 }	
+
+.image-card {
+  position:relative;
+}
+.images-container {
+    height: 100%;
+    overflow: inherit;
+	display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}	
+.image-top-right,.image-center-right, 
+.image-bottom-left,.image-bottom-left {
+   bottom: initial; 
+   right: initial;
+   left:initial;
+   top: initial;
+   z-index:initial;
+} 	
   
 }
 
