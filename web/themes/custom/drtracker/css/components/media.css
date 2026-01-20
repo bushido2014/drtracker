@@ -44,6 +44,10 @@ h2 {
     column-count: 1;
     column-gap: 40px;
 }
+
+.cols-3 {
+    grid-template-columns: repeat(2, 1fr);
+}	
 	
 	
 }
@@ -128,6 +132,10 @@ nav .site-nav-open li a{
 .features-wrapp-top,.features-wrapp-bottom  {
     grid-template-columns: 1fr;
 }
+
+.cols-3 {
+    grid-template-columns: repeat(1, 1fr);
+}	
   
   
 }
