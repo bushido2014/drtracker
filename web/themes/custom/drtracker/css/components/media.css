@@ -36,6 +36,7 @@ h2 {
 .cols-2 {
     grid-template-columns: repeat(1, 1fr);
 }
+
 	
 .solution-item__content .wrapp-title {
     width: 100%;
@@ -136,7 +137,9 @@ nav .site-nav-open li a{
 .cols-3 {
     grid-template-columns: repeat(1, 1fr);
 }	
-  
+.cols-4 {
+    grid-template-columns: repeat(2, 1fr);
+}	  
   
 }
 
@@ -161,6 +164,10 @@ nav .site-nav-open li a{
 .partners-logos {
     grid-template-columns: repeat(1, 1fr);
 }
+.cols-4 {
+    grid-template-columns: repeat(1, 1fr);
+}
+	
   
 }
 
