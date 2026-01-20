@@ -137,7 +137,7 @@ nav .site-nav-open li a{
  	color: #f6f6f6;
  }
 
-.features-wrapp-top,.features-wrapp-bottom  {
+.features-wrapp-top,.features-wrapp-bottom,.features-wrapp-top .features-item:nth-child(1)  {
     grid-template-columns: 1fr;
 }
 
