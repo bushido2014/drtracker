@@ -60,6 +60,12 @@ h2 {
  .views-view-responsive-grid {
     grid-template-columns: repeat(2, 1fr) !important;
   }
+.tags-wrapp {
+	display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
 	
 }
 
