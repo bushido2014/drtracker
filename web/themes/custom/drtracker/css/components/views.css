@@ -1,3 +1,7 @@
+.views-view-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
 .views-view-responsive-grid__item-inner {
    padding: 20px;
    background-color: var(--gray-color);
