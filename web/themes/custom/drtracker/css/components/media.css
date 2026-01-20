@@ -39,7 +39,12 @@ h2 {
 	
 .solution-item__content .wrapp-title {
     width: 100%;
-}	
+}
+.top-feature .key-feaure-list ul {
+    column-count: 1;
+    column-gap: 40px;
+}
+	
 	
 }
 
