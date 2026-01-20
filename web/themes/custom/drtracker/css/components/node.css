@@ -40,6 +40,10 @@ job-details-list ul {
   position: relative;
 }
 
+.job-details-box .btn-outline {
+  width: 100%;
+}
+
 .article-body {
   padding-block: 25px;
 }
