@@ -181,7 +181,9 @@ nav .site-nav-open li a{
 	text-align: center;
 }
 
-
+ .views-view-grid {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
 	
 	
 }
