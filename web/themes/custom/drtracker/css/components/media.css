@@ -57,7 +57,9 @@ h2 {
 .swiper-button-prev {
   left: 40% !important;
 }
-
+ .views-view-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
 	
 }
 
