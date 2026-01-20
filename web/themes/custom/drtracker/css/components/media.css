@@ -32,6 +32,10 @@ h2 {
 
 .solution-wrapp {
     grid-template-columns: repeat(1, 1fr);
+}
+
+.solution-item__content .wrapp-title {
+    width: 100%;
 }	
 	
 }
