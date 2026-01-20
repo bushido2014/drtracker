@@ -97,10 +97,6 @@ display: none;
   transform: translateY(-10px) rotate(-45deg);
 }
 
-
-
- 
-
  nav .site-nav-open {
 	position: absolute;
 	top: 90%;
@@ -146,8 +142,25 @@ nav .site-nav-open li a{
 }	
 .cols-4 {
     grid-template-columns: repeat(2, 1fr);
-}	  
-  
+}
+
+.about-us-wrapp {
+	flex-direction: column;
+}
+.about-us-video,.about-us-content {
+    width: 100%;
+}	
+.story-images {
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.story-item {
+	text-align: center;
+}
+
+
+	
+	
 }
 
 
