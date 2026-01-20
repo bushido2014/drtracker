@@ -60,7 +60,7 @@ h2.heading-title::after.sm-line {
   position: absolute;
   right: 0;           /* distanța de la dreapta textului */
   bottom: 6px;
-  width: 298px;           /* linie lungă */
+  width: 148px;           /* linie lungă */
   height: 20px;
   background: var(--green-w-color);
   z-index: -1;
