@@ -66,9 +66,9 @@ h2.heading-title::after.sm-line {
   z-index: -1;
 }
 
-/* Suprascrie doar pentru titluri scurte */
+
 .heading-title.sm-line::after {
-  width: 188px;           /* linie scurtă */
+  right: 220px;          
 }
 
 
