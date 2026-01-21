@@ -53,6 +53,9 @@ job-details-list ul {
 .article-img img,.integration-wrapp .integration-item img {
   border-radius: 12px;
 }
+.integration-item .heading  {
+  gap: 20px;
+}
 
 .integration-body {
   padding: 40px 0;
