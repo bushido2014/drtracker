@@ -1,9 +1,17 @@
-{% block content %}
+{# Extinde html.html.twig direct #}
+{% extends "html.html.twig" %}
+
+{% block page %}
   <div class="login-page">
-    <div class="login-form-wrapper">
-      <h2 class="login-title">{{ 'Login'|t }}</h2>
-      {{ page.content }}
+    <div class="container">
+      <div class="login-form-wrapper">
+        <div class="login-card">
+          <h1 class="login-title">{{ 'Login'|t }}</h1>
+          <div class="login-content">
+            {{ page.content }}
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 {% endblock %}
-
