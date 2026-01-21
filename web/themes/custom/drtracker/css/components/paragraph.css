@@ -55,7 +55,9 @@ h1.heading-title::after {
 .heading-title.sm-line::after {
   right: 120px;          
 }
-
+.feature-item content .wrapp-title .heading-title::after {
+  right: 306px;
+}
 .solution-item__content .wrapp-title .heading-title::after {
   right: 130px;
 }
