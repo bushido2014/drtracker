@@ -191,6 +191,11 @@ nav .site-nav-open li a{
     grid-template-columns: repeat(1, 1fr) !important;
   }
 	
+.blog-card__wrapp {
+	flex-direction: column;
+    text-align: center;
+}
+	
 	
 }
 
