@@ -2,6 +2,7 @@
   set classes = [
     'node',
     'node--type-' ~ node.bundle|clean_class,
+    'blog-tags',
   ]
 %}
 
@@ -12,7 +13,7 @@
 
       {% if content.field_image %}
         
-        {% block image %}{{~ content.field_image ~}}{% endblock %}
+       {{ content.field_image ~}}
      
       {% endif %}
 
