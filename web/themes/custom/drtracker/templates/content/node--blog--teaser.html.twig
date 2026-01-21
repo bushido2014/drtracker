@@ -12,7 +12,8 @@
 
       {% if content.field_image %}
         <a href="{{ url }}" class="blog-card__image">
-          {{ content.field_image }}
+          
+           {% block image %}{{~ content.field_image ~}}{% endblock %}
         </a>
       {% endif %}
 
