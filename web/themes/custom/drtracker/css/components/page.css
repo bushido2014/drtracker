@@ -137,6 +137,7 @@
 .fa-arrow-up {
     font-size: 1.70rem;
 }
+
 .error-page {
   margin:30px auto;
   padding:20px;
@@ -144,3 +145,4 @@
   text-align:center;
   color:oklch(63.7% 0.237 25.331) !important;
 }
+.error-page h2 {color:oklch(63.7% 0.237 25.331) !important;}
