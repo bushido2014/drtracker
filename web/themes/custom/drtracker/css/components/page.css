@@ -1,4 +1,114 @@
- .scroll-top.active{
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+.login-form-wrapper {
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-card {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.login-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.login-content {
+  margin-top: 20px;
+}
+
+/* Form styling */
+.login-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-content .form-group,
+.login-content .form-item {
+  margin-bottom: 20px;
+}
+
+.login-content label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #222;
+}
+
+.login-content input[type="text"],
+.login-content input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.login-content input[type="text"]:focus,
+.login-content input[type="password"]:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.login-content button,
+.login-content input[type="submit"] {
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.login-content button:hover,
+.login-content input[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Links */
+.login-content a {
+  color: #667eea;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.login-content a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .login-card {
+    padding: 30px 20px;
+  }
+
+  .login-title {
+    font-size: 24px;
+  }
+}
+
+
+.scroll-top.active{
     visibility: visible;
     opacity: 1;
   color: var(--gray-color-25);
