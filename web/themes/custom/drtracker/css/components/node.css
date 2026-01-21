@@ -50,9 +50,10 @@ job-details-list ul {
 .article-img {
   padding-top: 30px;
 }
-.article-img img {
+.article-img img,.integration-wrapp .integration-item img {
   border-radius: 12px;
 }
+
 .integration-body {
   padding: 40px 0;
 }
