@@ -42,7 +42,15 @@
   border-color: var(--primary-color);
   background-color: var(--white-color);
 }
-
+.bnt-error {
+  border-color: oklch(63.7% 0.237 25.331);
+  background-color: var(--white-color);
+}
+.btn-error:hover,
+.btn-error:focus {
+  border-color: oklch(50.5% 0.213 27.518);
+  background-color: var(--gray-color-25);
+}
 .btn-outline:hover,
 .btn-outline:focus {
   border-color: var(--primary-hover-color);
