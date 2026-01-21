@@ -63,6 +63,11 @@ job-details-list ul {
 section.heading {
   margin-block-end: 35px;
 }
+
+.blog-tags {
+  padding-block: 60px;
+}
+
 .blog-card__wrapp {
    gap: 25px;
 }
@@ -72,4 +77,5 @@ section.heading {
 }
 .blog-card__wrapp div:nth-child(1) a img{
     width: 100%;
+    border-radius: 12px;
 }
