@@ -38,10 +38,12 @@
   color: var(--white-color);
   border-color: var(--base-dark-color);
 }
+
 .btn-outline {
   border-color: var(--primary-color);
   background-color: var(--white-color);
 }
+
 .bnt-error {
   border-color: oklch(63.7% 0.237 25.331);
   background-color: var(--white-color);
