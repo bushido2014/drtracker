@@ -1,7 +1,10 @@
-{# themes/tema_ta/templates/taxonomy/taxonomy-term.html.twig #}
+
 
 {% if view_mode == 'teaser' %}
 <div class="container">
+ {# themes/drtracker/templates/taxonomy/taxonomy-term.html.twig #}
+
+{% if view_mode == 'teaser' %}
   <article class="taxonomy-card">
     {% if term.field_image.entity %}
       {% set media = term.field_image.entity %}
@@ -19,9 +22,13 @@
     <div class="taxonomy-card__content">
       <h3 class="taxonomy-card__title">{{ term.name.value }}</h3>
 
-      {% if term.description.value %}
+      {% if term.body.summary %}
         <p class="taxonomy-card__description">
-          {{ term.description.value | truncate(150, true, '...') }}
+          {{ term.body.summary }}
+        </p>
+      {% elseif term.body.value %}
+        <p class="taxonomy-card__description">
+          {{ term.body.value | striptags | slice(0, 150) }}...
         </p>
       {% endif %}
 
@@ -33,7 +40,6 @@
 
 {% else %}
   {# Full view #}
-
   <article class="taxonomy-term-full">
     <h1>{{ term.name.value }}</h1>
     
@@ -49,12 +55,13 @@
       {% endif %}
     {% endif %}
 
-    {% if term.description.value %}
+    {% if term.body.value %}
       <div class="taxonomy-description">
-        {{ term.description.value }}
+        {{ term.body.value }}
       </div>
     {% endif %}
   </article>
+{% endif %}
 </div>
 {% endif %}
  
