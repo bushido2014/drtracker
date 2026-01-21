@@ -4,19 +4,32 @@
     'node--type-' ~ node.bundle|clean_class,
   ]
 %}
+
 <article{{ attributes.addClass(classes) }}>
-<div class="container">
+  <div class="container">
 
-<div class="blog-card__wrapp d-flex">
-  {% if content.field_image %}
-   <a href="{{ url }}" class="blog-card__image">
-        {{ content.field_image }}
-   </a>
-  {% endif %}
-<a href="{{ url }}" class="blog-card__content">
- <h4 class="blog-card__title"> {{ label }}</h3>
-</a>
-</div>
+    <div class="blog-card__wrapp d-flex">
 
-</div>
+      {% if content.field_image %}
+        <a href="{{ url }}" class="blog-card__image">
+          {{ content.field_image }}
+        </a>
+      {% endif %}
+
+      <div class="blog-card__content">
+        <h4 class="blog-card__title">
+          <a href="{{ url }}">{{ label }}</a>
+        </h4>
+
+        {% if content.body %}
+          <div class="blog-card__excerpt">
+            {{ content.body }}
+          </div>
+        {% endif %}
+      </div>
+
+    </div>
+
+  </div>
 </article>
+
