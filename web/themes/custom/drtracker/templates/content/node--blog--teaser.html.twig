@@ -1,0 +1,23 @@
+{%
+  set classes = [
+    'node',
+    'node--type-' ~ node.bundle|clean_class,
+  ]
+%}
+<article{{ attributes.addClass(classes) }}>
+<div class="container">
+  {% if content.field_image %}
+    <div class="blog-card__image">
+      <a href="{{ url }}">
+        {{ content.field_image }}
+      </a>
+    </div>
+  {% endif %}
+
+  <div class="blog-card__content">
+    <h3 class="blog-card__title">
+      <a href="{{ url }}">{{ label }}</a>
+    </h3>
+  </div>
+</div>
+</article>
