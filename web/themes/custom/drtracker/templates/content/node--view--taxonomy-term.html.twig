@@ -4,7 +4,8 @@
 <div class="container">
  {# themes/drtracker/templates/taxonomy/taxonomy-term.html.twig #}
 
-{% if view_mode == 'teaser' %}
+
+
   <article class="taxonomy-card">
     {% if term.field_image.entity %}
       {% set media = term.field_image.entity %}
@@ -32,7 +33,7 @@
         </p>
       {% endif %}
 
-      <a href="{{ path('entity.taxonomy_term.canonical', {'taxonomy_term': term.id()}) }}" class="taxonomy-card__link">
+      <a href="{{ path('entity.taxonomy_term.canonical', {'taxonomy_term': term.tid.value}) }}" class="taxonomy-card__link">
         {{ 'Read More'|t }} →
       </a>
     </div>
@@ -61,7 +62,7 @@
       </div>
     {% endif %}
   </article>
-{% endif %}
+
 </div>
 {% endif %}
  
