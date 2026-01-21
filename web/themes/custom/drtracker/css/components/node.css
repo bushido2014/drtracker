@@ -70,3 +70,6 @@ section.heading {
   display:block;
   width: 350px;
 }
+.blog-card__wrapp div:nth-child(1) a img{
+    width: 100%;
+}
