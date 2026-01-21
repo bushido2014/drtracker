@@ -11,10 +11,9 @@
     <div class="blog-card__wrapp d-flex">
 
       {% if content.field_image %}
-        <a href="{{ url }}" class="blog-card__image">
-          
-           {% block image %}{{~ content.field_image ~}}{% endblock %}
-        </a>
+        
+        {% block image %}{{~ content.field_image ~}}{% endblock %}
+     
       {% endif %}
 
       <div class="blog-card__content">
