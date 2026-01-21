@@ -1,3 +1,4 @@
+
 button, input,
  optgroup,
   select, 
@@ -46,4 +47,9 @@ textarea:focus {
  background: var(--white-color);
  padding: 30px;
  border-radius: var(--border-radius);
+}
+.user-login-form {
+    margin: 20px auto;
+    padding: 4rem;
+    max-width: 800px;
 }
