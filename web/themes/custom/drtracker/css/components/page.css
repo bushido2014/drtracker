@@ -137,3 +137,9 @@
 .fa-arrow-up {
     font-size: 1.70rem;
 }
+.error-page error-404 {
+  margin:auto;
+  padding:20px;
+  max-width: 900px;
+  text-align:center;
+}
