@@ -195,7 +195,12 @@ nav .site-nav-open li a{
 	flex-direction: column;
     text-align: center;
 }
-	
+h1.heading-title::after,
+.solution-item__content .wrapp-title .heading-title::after,
+.connection-content .heading-title::after,
+.feature-item content .wrapp-title .heading-title::after {
+    display:none;
+}	
 	
 }
 
