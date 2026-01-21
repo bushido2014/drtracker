@@ -44,7 +44,7 @@
   background-color: var(--white-color);
 }
 
-.bnt-error {
+.btn-error {
   border-color: oklch(63.7% 0.237 25.331);
   background-color: var(--white-color);
 }
