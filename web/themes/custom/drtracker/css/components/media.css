@@ -201,6 +201,17 @@ h1.heading-title::after,
 
 
 @media (max-width: 768px) {
+	
+ .featured-posts {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .featured-posts .feature-card {
+    grid-column: auto;
+    grid-row: auto;
+  }	
+	
   .work-images {
     grid-template-columns: 1fr;
     grid-auto-rows: 200px;
