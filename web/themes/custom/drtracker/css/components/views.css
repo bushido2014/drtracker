@@ -109,17 +109,6 @@
    margin: 40px auto 10px;
 }
 
-@media (max-width: 768px) {
-  .featured-posts {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-  }
-
-  .featured-posts .feature-card {
-    grid-column: auto;
-    grid-row: auto;
-  }
-}
 .js-pager__items {
    justify-content: center;
     gap: 10px;
