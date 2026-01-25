@@ -8,7 +8,6 @@ global:
       css/components/header.css: {}
       css/components/page.css: {}
       css/components/paragraph.css: {}
-      css/components/accordion.css: {}
       css/components/node.css: {}
       css/components/menu.css: {}
       css/components/footer.css: {}
@@ -17,7 +16,6 @@ global:
       css/components/views.css: {}
   js:
     js/main.js: {}
-    js/accordion.js: {}
   dependencies:
     - core/drupal
     - core/once
@@ -32,5 +30,15 @@ testimonials-slider:
   js:
     https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js: { type: external, minified: true }
     js/slider.js: {}
+  dependencies:
+    - core/drupal
+
+  accordion:
+  version: 1.0
+  css:
+    theme:
+      css/components/accordion.css: {}
+  js:
+    js/accordion.js: {}
   dependencies:
     - core/drupal
