@@ -33,7 +33,7 @@ testimonials-slider:
   dependencies:
     - core/drupal
 
-  accordion:
+accordion:
   version: 1.0
   css:
     theme:
