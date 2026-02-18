@@ -47,8 +47,9 @@ textarea:focus {
  padding: 30px;
  border-radius: var(--border-radius);
 }
-.user-login-form {
+.user-login-form.,.user-pass  {
     margin: 20px auto;
     padding: 4rem;
     max-width: 580px;
 }
+ 
