@@ -61,13 +61,12 @@ div[role="contentinfo"][aria-label="Error message"] {
 
 
 div[role="alert"] {
-    color: #721c24;
-    font-weight: bold;
+    color: #cf1a2b;
 }
 
 
 div[role="alert"] a {
-    color: #004085;
+    color: #2c7acf;
     text-decoration: underline;
 }
 
