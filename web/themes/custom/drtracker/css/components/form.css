@@ -53,4 +53,21 @@ textarea:focus {
     padding: 4rem;
     max-width: 580px;
 }
- 
+
+
+div[role="contentinfo"][aria-label="Error message"] {
+   text-align:center;
+}
+
+
+div[role="alert"] {
+    color: #721c24;
+    font-weight: bold;
+}
+
+
+div[role="alert"] a {
+    color: #004085;
+    text-decoration: underline;
+}
+
