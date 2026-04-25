@@ -14,7 +14,7 @@ function drtracker_preprocess_html(array &$variables): void {
 
 $route_name = \Drupal::routeMatch()->getRouteName();
 
-  // Adaugă route ca body class (ca la WordPress).
+  // route body class.
   $variables['attributes']['class'][] = 'page--' . strtr($route_name, '.', '-');
 
   // Exemplu: adaugă clasa după tipul de nod
